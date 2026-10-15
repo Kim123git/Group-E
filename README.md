@@ -1,7 +1,8 @@
+Group-E
+
 XJTLU Major Selection AI Assistant
 
-Navigation Buttons
-Click to expand each section
+Navigation Buttons Click to expand each section
 <details>
 <summary>Project Overview & AI Prototype</summary>
 
@@ -28,9 +29,13 @@ Note: The AI chatbot link below is XJTLU internal resource. XJTLU campus network
 <details>
 <summary>Research Rationale</summary>
 
-Year 1 XJTLU students face major selection, but information about majors is scattered across official websites, social media and senior students’ experience. Students spend much time collecting and comparing major information manually.
+Year 1 XJTLU students face major selection, but information about majors is scattered across official websites, social media and senior students’ experience.
 
-This study uses a comparative perspective: we compare the user experience of getting major information via our AI assistant against the traditional way (searching official websites and forums). We aim to explore whether an AI chatbot can lower the information‑search burden for students.
+Students spend much time collecting and comparing major information manually.
+
+This study uses a comparative perspective: we compare the user experience of getting major information via our AI assistant against the traditional way (searching official websites and forums).
+
+We aim to explore whether an AI chatbot can lower the information‑search burden for students.
 
 </details>
 
@@ -148,19 +153,31 @@ Study Title: Evaluation of an AI Assistant for XJTLU Year1 Major Selection
 Research Group: HCI Group
 
 Purpose of the study
-We are evaluating an internal XJTLU web-based AI chatbot that helps Year1 students collect major-selection information. You need to complete simple tasks, fill a questionnaire and answer interview questions.
+We are evaluating an internal XJTLU web-based AI chatbot that helps Year1 students collect major-selection information.
+
+You need to complete simple tasks, fill a questionnaire and answer interview questions.
 
 What you need to do
-Interact with the AI chatbot to finish 3 tasks, fill a short questionnaire and take a brief interview. Total time ~15 minutes.
+Interact with the AI chatbot to finish 3 tasks, fill a short questionnaire and take a brief interview.
+
+Total time ~15 minutes.
 
 Risks & Benefits
-There are no foreseeable risks. Your participation helps us improve this AI tool. AI answers are for reference only and do not represent official XJTLU information.
+There are no foreseeable risks.
+
+Your participation helps us improve this AI tool.
+
+AI answers are for reference only and do not represent official XJTLU information.
 
 Confidentiality
-All collected data will be anonymized. No personal identifiable information will be published, your name will not appear in the report.
+All collected data will be anonymized.
+
+No personal identifiable information will be published, your name will not appear in the report.
 
 Right to withdraw
-You may stop participating at any time without penalty. Before we finish data analysis, you can request us to delete your data.
+You may stop participating at any time without penalty.
+
+Before we finish data analysis, you can request us to delete your data.
 
 Contact
 If you have questions about this research, contact our group members.
@@ -301,6 +318,8 @@ Add a clear disclaimer on the webpage to remind users that AI answers are not of
 
 3. Study reflection
 
-During usability testing, we learned that user trust is critical for students to accept AI tools for high-stakes decisions like major selection. Usability is not only about interface operation, but also the accuracy of the AI content.
+During usability testing, we learned that user trust is critical for students to accept AI tools for high-stakes decisions like major selection.
+
+Usability is not only about interface operation, but also the accuracy of the AI content.
 
 </details>
