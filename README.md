@@ -22,6 +22,7 @@ Note: The AI chatbot link below is XJTLU internal resource. XJTLU campus network
 2. Can users efficiently get answers to their major‑related questions by interacting with this AI assistant?
 
 3. Do Year 1 students trust the AI‑generated answers and consider this tool usable for their major choice?
+
 </details>
 
 <details>
@@ -30,6 +31,7 @@ Note: The AI chatbot link below is XJTLU internal resource. XJTLU campus network
 Year 1 XJTLU students face major selection, but information about majors is scattered across official websites, social media and senior students’ experience. Students spend much time collecting and comparing major information manually.
 
 This study uses a comparative perspective: we compare the user experience of getting major information via our AI assistant against the traditional way (searching official websites and forums). We aim to explore whether an AI chatbot can lower the information‑search burden for students.
+
 </details>
 
 <details>
@@ -44,10 +46,12 @@ Post‑test survey: Collect quantitative usability and trust scores after tasks.
 
 Semi‑structured interview: Gather qualitative feedback about pain points and suggestions.
 
+
 3.2 Sampling Method
 Convenience sampling. Recruit 5–8 Year 1 XJTLU students preparing for major selection.
 
 Inclusion criteria: Current Year 1 students, have not confirmed their final major.
+
 
 3.3 Data to Collect
 
@@ -60,12 +64,14 @@ Quantitative Data
 
 4. 5‑point Likert score for trust in AI responses
 
+
 Qualitative Data
 1. Spoken comments during usability test
 
 2. Answers in post-test interview
 
 3. Records of AI errors, missing or confusing outputs
+
 
 3.4 Predefined User Tasks
 Participants will complete these tasks on the XJTLU AI‑Agent chatbot:
@@ -75,6 +81,7 @@ Participants will complete these tasks on the XJTLU AI‑Agent chatbot:
 2. Task 2: Your GPA is 70, ask the AI to recommend suitable majors.
 
 3. Task 3: Ask the AI to compare the workload and career prospects of Computer Science and HCI.
+
 </details>
 
 <details>
@@ -92,6 +99,7 @@ I trust answers from this AI assistant.
 The AI quickly understands my questions about XJTLU majors.
 
 This tool reduces my time searching for major information.
+
 
 2. SUS Scale (10 standard items)
 
@@ -114,6 +122,7 @@ I found the system cumbersome to use.
 I felt confident using the system.
 
 I needed to learn many things before I could use the system.
+
 
 3. Open question: What is the biggest advantage of this AI assistant?
 
@@ -171,6 +180,7 @@ I agree to take part in this study.
 Name: _______________
 Signature: _______________
 Date: _______________
+
 </details>
 
 <details open>
@@ -263,6 +273,7 @@ P3: Suggest adding example prompts so I know what to ask.
 P4: I am worried the AI may give outdated GPA thresholds.
 
 P5: The chat interface is simple and easy to operate.
+
 </details>
 
 <details>
@@ -278,6 +289,7 @@ Small sample size (only 5 participants), results cannot be generalised to all Ye
 
 This AI agent is an internal XJTLU resource; users outside campus without VPN cannot access it.
 
+
 2. Improvement suggestions
 
 Add example prompt buttons on the chat page to guide users to write better questions.
@@ -286,7 +298,9 @@ Build a fact-check knowledge base to reduce AI hallucinations about XJTLU major 
 
 Add a clear disclaimer on the webpage to remind users that AI answers are not official information.
 
+
 3. Study reflection
 
 During usability testing, we learned that user trust is critical for students to accept AI tools for high-stakes decisions like major selection. Usability is not only about interface operation, but also the accuracy of the AI content.
+
 </details>
