@@ -1,28 +1,37 @@
 # XJTLU Major Selection AI Assistant
-## Project Overview
+
+## 🧭 Navigation Buttons
+> Click to expand each section
+<details>
+<summary>🔍 Project Overview & AI Prototype</summary>
+
 This is an AI‑powered chatbot application hosted on XJTLU internal AI‑Agent platform. The target users are Year 1 XJTLU students who will complete major selection at the end of Year 1.
 Students can ask natural‑language questions about XJTLU major requirements, GPA thresholds, course workload and career prospects. The AI assistant provides tailored information to support their major decision‑making.
 
 > ⚠️ Note: The AI chatbot link below is XJTLU internal resource. **XJTLU campus network or XJTLU VPN is required to access this agent**.
 
 <a href="https://aiagent.xjtlu.edu.cn/product/llm/mall/application/d40ej496i3uelisjb0q0/chat" target="_blank" rel="noopener noreferrer">👉 Open our XJTLU Major Selection AI Chatbot (XJTLU VPN / Campus Network Needed)</a>
+</details>
 
----
+<details>
+<summary>❓ Research Questions</summary>
 
-## 1. Research Questions
 1. Can this AI chatbot help Year 1 XJTLU students retrieve accurate and clear information for major selection?
 2. Can users efficiently get answers to their major‑related questions by interacting with this AI assistant?
 3. Do Year 1 students trust the AI‑generated answers and consider this tool usable for their major choice?
+</details>
 
----
+<details>
+<summary>📖 Research Rationale</summary>
 
-## 2. Research Rationale
 Year 1 XJTLU students face major selection, but information about majors is scattered across official websites, social media and senior students’ experience. Students spend much time collecting and comparing major information manually.
+
 This study uses a comparative perspective: we compare the user experience of getting major information via our AI assistant against the traditional way (searching official websites and forums). We aim to explore whether an AI chatbot can lower the information‑search burden for students.
+</details>
 
----
+<details>
+<summary>🧪 Experiment Plan</summary>
 
-## 3. Experiment Plan
 ### 3.1 Evaluation Methods
 We combine **usability testing, post‑test survey, and semi‑structured interview**.
 - Usability testing: Participants complete 3 predefined tasks on our AI agent. We record task performance.
@@ -50,10 +59,11 @@ Participants will finish these tasks on our XJTLU AI‑Agent chatbot:
 1. Task 1: Ask the AI about the GPA requirement and pre‑requisite courses for the XJTLU HCI major.
 2. Task 2: You have an average GPA of 70. Ask the AI to recommend suitable majors for you.
 3. Task 3: Ask the AI to compare the course workload and career direction between Computer Science and HCI.
+</details>
 
----
+<details>
+<summary>📄 Research Materials</summary>
 
-## 4. Research Materials
 ### 4.1 Survey Script (Post‑test Questionnaire)
 > After usability test, participants fill this survey.
 1. Please rate your agreement on the following statements (1=Strongly Disagree, 5=Strongly Agree)
@@ -117,14 +127,16 @@ I agree to take part in this study.
 Name: _______________
 Signature: _______________
 Date: _______________
+</details>
 
----
+<details open>
+<summary>📊 Sample Data (Fixed Table ✅)</summary>
 
-## 5. Sample Data
 > After usability testing, paste your collected pilot data here.
 ### Quantitative Sample Data (Pilot Test, N=5)
+
 | Participant ID | Task1 Time(s) | Task1 Success | Task2 Time(s) | Task2 Success | Task3 Time(s) | Task3 Success | SUS Score | Trust Score (1‑5) |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | P1 | 42 | ✅ | 58 | ✅ | 71 | ✅ | 76 | 4 |
 | P2 | 65 | ✅ | 82 | ❌ | 90 | ✅ | 68 | 3 |
 | P3 | 38 | ✅ | 45 | ✅ | 62 | ✅ | 80 | 4 |
@@ -137,10 +149,11 @@ Date: _______________
 - P3: Suggest adding example prompts so I know what to ask.
 - P4: I am worried the AI may give outdated GPA thresholds.
 - P5: The chat interface is simple and easy to operate.
+</details>
 
----
+<details>
+<summary>💡 Reflection on Study Implementation</summary>
 
-## 6. Reflection on Study Implementation
 1. **Limitations found during pilot data collection**
     - The AI may occasionally generate incorrect or outdated XJTLU major information, which reduces user trust.
     - Some participants do not know how to phrase their questions well, so they struggle to get ideal replies.
@@ -151,4 +164,5 @@ Date: _______________
     - Build a fact‑check knowledge base to reduce AI hallucination about XJTLU major rules.
     - Add a clearer disclaimer on the web page to remind users that AI answers are not official.
 3. **Study reflection**
-    During usability testing, we learned that trust is a critical factor for students to accept AI tools for important decisions like major selection. Usability is not only about interface ease‑of‑use, but also the accuracy of AI content.
+During usability testing, we learned that trust is a critical factor for students to accept AI tools for important decisions like major selection. Usability is not only about interface ease‑of‑use, but also the accuracy of AI content.
+</details>
