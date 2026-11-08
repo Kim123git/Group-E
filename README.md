@@ -14,22 +14,25 @@
 - [Data preparation and analysis](#data-preparation-and-analysis)
 - [Findings](#findings)
 - [Discussion, limitations and recommendations](#discussion-limitations-and-recommendations)
-- [Transparency and references](#transparency-and-references)
 
 <a id="project-at-a-glance"></a>
 ## 1. Project at a glance
 **Group members**: Group‑E members
 
-**Project summary**
+> [!NOTE]
+> This report documents our evaluation of the XJTLU internal AI‑Agent major‑selection chatbot for Year‑1 undergraduate students.
+
 This project evaluates the XJTLU internal AI‑Agent major‑selection chatbot for Year‑1 undergraduate students.
-Originally we planned task‑based usability testing with three standardized tasks for objective timing and success metrics. Due to practical constraints including VPN‑access barriers for the internal AI platform, the main formal data collection was adjusted to an online questionnaire‑based mixed‑method survey. We collected quantitative Likert‑scale ratings including SUS usability, trust, and direct subjective comparison between the AI assistant and traditional major‑information‑search channels, alongside open‑ended qualitative feedback. The study aims to understand user perception, strengths, pain‑points and improvement directions for this AI tool.
+Originally we planned task‑based usability testing with three standardized tasks for objective timing and success metrics.
+To better capture users’ subjective attitudes and perceived trust toward this AI tool, the main formal data collection was adjusted to an online questionnaire‑based mixed‑method survey. We collected quantitative Likert‑scale ratings including SUS usability, trust, and direct subjective comparison between the AI assistant and traditional major‑information‑search channels, alongside open‑ended qualitative feedback. The study aims to understand user perception, strengths, pain‑points and improvement directions for this AI tool.
 
 Evaluated system: XJTLU Major‑Selection AI Assistant (internal AI‑Agent platform).
 
 <a id="problem-motivation-and-research-questions"></a>
 ## 2. Problem, motivation and research questions
 ### Context & intended users
-Target users: XJTLU Year‑1 students who need to make major‑selection decisions at the end of Year 1.
+🎯 Target users: XJTLU Year‑1 students who need to make major‑selection decisions at the end of Year 1.
+
 Major‑related information is scattered across university official websites, social media and informal advice from senior students. Students spend substantial manual effort gathering and comparing major‑related information.
 
 ### Research Questions
@@ -37,8 +40,8 @@ Major‑related information is scattered across university official websites, so
 2. Can users efficiently get answers to their major‑related questions by interacting with this AI assistant?
 3. Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?
 
-### Scope of claims
-Findings are limited to XJTLU internal AI‑Agent major‑selection assistant, and our sample of participating Year‑1 students. Results cannot be generalised to external large‑language‑models or other‑university student populations.
+> [!IMPORTANT]
+> Findings are limited to XJTLU internal AI‑Agent major‑selection assistant, and our sample of participating Year‑1 students. Results cannot be generalised to external large‑language‑models or other‑university student populations.
 
 <a id="background-and-related-work"></a>
 ## 3. Background and related work
@@ -48,7 +51,7 @@ Many existing HCI usability studies adopt task‑based usability testing combini
 
 **Research gap**: Few empirical evaluations focus on university‑internal closed AI‑agent systems built for undergraduate major‑selection workflows. Many evaluations measure usability alone, without jointly investigating perceived trust and concerns over factual accuracy.
 
-Rationale for method choice: We adopted a mixed‑methods approach combining quantitative survey scales and open‑ended qualitative feedback, to capture both numerical attitude measurements and rich user suggestions.
+✅ Rationale for method choice: We adopted a mixed‑methods approach combining quantitative survey scales and open‑ended qualitative feedback, to capture both numerical attitude measurements and rich user suggestions.
 
 <a id="system-and-evaluation-design"></a>
 ## 4. System and evaluation design
@@ -81,12 +84,12 @@ Formal valid sample N=12.
 6. Open‑ended text questions for qualitative feedback.
 
 ### Measures
-1. Demographic and background items
-2. Within‑subject paired Likert‑ratings for MSA‑AI vs traditional search (5‑point scale, Q14 series)
-3. Standard System Usability Scale (SUS, 10‑item) for participants who had used MSA
-4. Custom trust‑related 5‑point Likert‑scale items
-5. Multiple‑choice items for perceived strengths, barriers and improvement requirements
-6. Open‑ended free‑text questions for qualitative feedback
+- Demographic and background items
+- Within‑subject paired Likert‑ratings for MSA‑AI vs traditional search (5‑point scale, Q14 series)
+- Standard System Usability Scale (SUS, 10‑item) for participants who had used MSA
+- Custom trust‑related 5‑point Likert‑scale items
+- Multiple‑choice items for perceived strengths, barriers and improvement requirements
+- Open‑ended free‑text questions for qualitative feedback
 
 ### Ethics, consent and bias mitigation
 - Digital informed consent (checkbox‑based consent in questionnaire; full information‑sheet and consent‑form document stored in supplementary‑materials zip package).
@@ -94,9 +97,10 @@ Formal valid sample N=12.
 - Participants could withdraw at any time without penalty.
 - AI outputs were explicitly stated as for‑reference‑only and not official university advice.
 
-### Deviation from original plan
-Originally we planned controlled task‑based usability‑testing with objective task‑timing metrics and repeated‑measures ANOVA for the three predefined tasks.
-Due to practical recruitment constraints including VPN‑access restrictions for the campus‑internal AI‑Agent platform, formal main‑study was changed to questionnaire‑only survey. Task‑level timing and task‑success behavioural metrics were **not collected for main study**, so repeated‑measures ANOVA was not performed for the main dataset. Pilot N=5 data was only used for material iteration.
+> [!IMPORTANT]
+> ### Deviation from original plan
+> Originally we planned controlled task‑based usability‑testing with objective task‑timing metrics and repeated‑measures ANOVA for the three predefined tasks.
+> To better collect users’ subjective attitudes and trust perception, our formal main‑study was changed to questionnaire‑only survey. Task‑level timing and task‑success behavioural metrics were **not collected for main study**, so repeated‑measures ANOVA was not performed for the main dataset. Pilot N=5 data was only used for material iteration.
 
 <a id="data-preparation-and-analysis"></a>
 ## 5. Data preparation and analysis
@@ -112,6 +116,7 @@ Data were exported from survey tool as CSV and imported into IBM SPSS Statistics
 4. Within‑subject comparison: Shapiro‑Wilk test showed violation of normality assumption for Likert items. Therefore non‑parametric **Wilcoxon signed‑rank test** was prioritised over paired‑samples t‑test for comparing subjective ratings between MSA‑AI and traditional‑search channels. Effect sizes were reported.
 5. Independent‑samples comparison between gender groups on SUS total score.
 
+> [!NOTE]
 > Inferential repeated‑measures one‑way ANOVA for three usability tasks was not applicable for main‑study dataset because task‑level timing metrics were not collected in questionnaire survey.
 
 ### Qualitative data processing
@@ -137,10 +142,10 @@ Independent‑samples comparison showed no statistically‑significant SUS‑sco
 
 ### Qualitative thematic findings
 From open‑text responses, four main themes emerged:
-1. ✅ Strength theme: Direct, fast information retrieval; convenient natural‑language interaction.
-2. ⚠️ Accuracy‑risk theme: Worries about outdated major requirements, AI hallucination, lack of cited official sources inside AI replies.
-3. 🧩 Interaction‑barrier theme: Uncertainty on how to frame good prompts for the AI chatbot.
-4. 💡 Improvement theme: Request for example prompt buttons, prominent official‑source references, clear disclaimer about non‑official nature of AI outputs.
+- ✅ **Strength**: Direct, fast information retrieval; convenient natural‑language interaction.
+- ⚠️ **Accuracy risk**: Worries about outdated major requirements, AI hallucination, lack of cited official sources inside AI replies.
+- 🧩 **Interaction barrier**: Uncertainty on how to frame good prompts for the AI chatbot.
+- 💡 **Improvement suggestion**: Request for example prompt buttons, prominent official‑source references, clear disclaimer about non‑official nature of AI outputs.
 
 <a id="discussion-limitations-and-recommendations"></a>
 ## 7. Discussion, limitations and recommendations
@@ -150,11 +155,11 @@ Participants subjectively perceived the MSA AI assistant as a fast‑acting tool
 Our original pilot usability‑test observation also echoed this point: the personalised GPA‑based major‑recommendation task had high failure‑rate, showing factual‑recommendation functions are fragile for this system.
 
 ### Limitations
-1. Sampling: convenience‑sampling small sample N=12, limited generalisability to full Year‑1 student population.
-2. Main‑study is questionnaire‑based self‑report survey, without controlled objective task‑performance (time / success‑rate) behavioural measurements. Self‑reported attitudes may diverge from real‑world actual usage behaviour.
-3. Access constraint: MSA AI assistant is campus‑VPN‑locked internal system, external participants cannot take part.
-4. Potential response bias in self‑reported questionnaire ratings.
+- Sampling: convenience‑sampling small sample N=12, limited generalisability to full Year‑1 student population.
+- Main‑study is questionnaire‑based self‑report survey, without controlled objective task‑performance (time / success‑rate) behavioural measurements. Self‑reported attitudes may diverge from real‑world actual usage behaviour.
+- Potential response bias in self‑reported questionnaire ratings.
 
+> [!NOTE]
 > Pilot‑test N=5 only served for material iteration and is not formal evidence for our conclusions.
 
 ### Evidence‑based recommendations
@@ -164,25 +169,7 @@ Each recommendation is supported by collected participant feedback:
 3. Where possible, make AI assistant explicitly reference or link to official university major‑document sources to improve perceived source‑credibility (from source‑credibility quantitative result and qualitative feedback).
 4. Further iteration on personalised GPA‑based major‑recommendation logic, since pilot usability‑test found high failure‑rate for this task.
 
-> Distinction: above points are evidence‑based suggestions, not proven causal conclusions from this study.
+> [!NOTE]
+> Above points are evidence‑based suggestions, not proven causal conclusions from this study.
 
-<a id="transparency-and-references"></a>
-## 8. Transparency and references
-### Group‑member contribution statement
-> Write down each group‑member’s responsibilities here: e.g. participant recruitment, questionnaire design, SPSS analysis, web‑report writing, poster‑design.
 
-### AI‑use statement
-[1] DeepSeek V3.1, available at https://www.deepseek.com. Used for grammatical proofreading and formatting suggestions only, no substantive content generation.
-
-### Data‑and‑material‑availability statement
-Raw participant survey responses, SPSS `.sav` dataset, SPSS output `.spv` file, questionnaire drafts, information‑sheet and consent‑form documents, interview‑related materials are packaged inside `ADS401_GroupE_SupplementaryMaterials.zip` for submission.
-**No raw identifiable participant data is published on this GitHub web‑report or GitHub repository.** Only aggregated summary statistics and anonymised thematic quotes are presented on this webpage.
-
-### Acknowledgements
-We thank XJTLU AI‑Agent platform for providing access to the major‑selection AI assistant system.
-
-### References
-> Insert IEEE‑format numbered references for HCI / SUS / AI‑trust‑in‑education literature here.
-
----
-✨ End of Web Report
