@@ -24,7 +24,9 @@
 
 This project evaluates the XJTLU internal AI‑Agent major‑selection chatbot for Year‑1 undergraduate students.
 Originally we planned task‑based usability testing with three standardized tasks for objective timing and success metrics.
-To better capture users’ subjective attitudes and perceived trust toward this AI tool, the main formal data collection was adjusted to an online questionnaire‑based mixed‑method survey. We collected quantitative Likert‑scale ratings including SUS usability, trust, and direct subjective comparison between the AI assistant and traditional major‑information‑search channels, alongside open‑ended qualitative feedback. The study aims to understand user perception, strengths, pain‑points and improvement directions for this AI tool.
+To better capture users’ subjective attitudes and perceived trust toward this AI tool, the main formal data collection was adjusted to an online questionnaire‑based mixed‑method survey.
+We collected demographic background, awareness and usage experience, standardized SUS usability scale, trust scale, multiple‑choice comparative questions and open‑ended qualitative feedback.
+The study aims to understand user perception, strengths, pain‑points and improvement directions for this AI tool.
 
 Evaluated system: XJTLU Major‑Selection AI Assistant (internal AI‑Agent platform).
 
@@ -41,7 +43,7 @@ Major‑related information is scattered across university official websites, so
 3. Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?
 
 > [!IMPORTANT]
-> Findings are limited to XJTLU internal AI‑Agent major‑selection assistant, and our sample of participating Year‑1 students. Results cannot be generalised to external large‑language‑models or other‑university student populations.
+> Findings are limited to XJTLU internal AI‑Agent major‑selection assistant, and our sample of participating students. Results cannot be generalised to external large‑language‑models or other‑university student populations.
 
 <a id="background-and-related-work"></a>
 ## 3. Background and related work
@@ -68,26 +70,32 @@ The evaluated system is an internal XJTLU AI‑Agent chatbot built to answer maj
 
 ### Formal main‑study design
 Formal data collection adopted **online questionnaire‑based cross‑sectional survey (non‑experimental)**.
-Within‑subject comparison was implemented via questionnaire items: every respondent provided subjective Likert ratings for **both the MSA AI assistant AND traditional major‑information search channels**.
+> Important note: Q14 comparative items are categorical single‑choice questions (MSA / Traditional search / Cannot judge), not paired Likert ratings. Each respondent selected which option performed better on each dimension, respondents **did not give separate 1‑5 ratings for MSA and traditional search respectively**.
 
 ### Participants & Sampling
-Sampling method: convenience sampling of XJTLU Year‑1 students.
-Inclusion criteria: Year‑1 students undergoing major‑selection process.
-Formal valid sample N=12.
+Sampling method: convenience sampling of XJTLU students.
+Inclusion criteria: XJTLU undergraduate students experiencing major‑selection process.
+Formal total valid sample N=12.
+Among all participants:
+- Only **4 participants reported they had used the MSA AI assistant**
+- 8 participants had never used MSA.
+
+> Therefore SUS, trust, perceived‑usefulness and AI‑error‑perception questions are only valid for the subsample of 4 users who had real experience with the tool.
 
 ### Study procedure
 1. Participants read online information sheet and gave digital informed consent via checkbox before accessing questionnaire items.
 2. Screening question confirmed participant meets inclusion criteria.
 3. Questionnaire collected demographics, prior awareness and usage experience of MSA AI assistant.
-4. Within‑subject rating block Q14: participants rated both MSA‑AI and traditional search on ease, speed, accuracy, clarity, source‑credibility, intention‑to‑reuse.
-5. SUS System Usability Scale, trust‑related Likert‑items, multiple‑choice questions on advantages / barriers / improvement needs.
+4. Comparative single‑choice block Q14: participants selected which approach performed better on each dimension (MSA / Traditional search / Cannot judge).
+5. Standard System Usability Scale (SUS), trust‑related scale, multiple‑choice questions on advantages / barriers / improvement needs (only visible for participants who had used MSA).
 6. Open‑ended text questions for qualitative feedback.
 
 ### Measures
 - Demographic and background items
-- Within‑subject paired Likert‑ratings for MSA‑AI vs traditional search (5‑point scale, Q14 series)
-- Standard System Usability Scale (SUS, 10‑item) for participants who had used MSA
-- Custom trust‑related 5‑point Likert‑scale items
+- Awareness and usage history of MSA AI assistant
+- Q14 categorical comparative single‑choice items
+- Standard System Usability Scale (SUS, 10‑item) → only for participants who had used MSA
+- Custom trust scale (4 items) → only for participants who had used MSA
 - Multiple‑choice items for perceived strengths, barriers and improvement requirements
 - Open‑ended free‑text questions for qualitative feedback
 
@@ -107,56 +115,71 @@ Formal valid sample N=12.
 Data were exported from survey tool as CSV and imported into IBM SPSS Statistics for quantitative analysis.
 
 ### Quantitative data processing
-1. Data‑cleaning: filter invalid responses. Participants were split into subgroups: participants who had used MSA AI assistant vs participants who never used MSA. Not‑applicable responses from non‑users were preserved and excluded from MSA‑specific scales such as SUS.
-2. SUS scoring: Initial SPSS compute syntax contained arithmetic error. SUS total scores were **recalculated following official standard SUS formula**:
-    - Odd‑numbered items: raw score minus one
-    - Even‑numbered reversed items: five minus raw score
-    - Sum all transformed values and multiply by 2.5 to get final 0‑100 SUS score.
-3. Descriptive statistics: frequencies, percentages, mean, standard deviation, min‑max values for all scale items.
-4. Within‑subject comparison: Shapiro‑Wilk test showed violation of normality assumption for Likert items. Therefore non‑parametric **Wilcoxon signed‑rank test** was prioritised over paired‑samples t‑test for comparing subjective ratings between MSA‑AI and traditional‑search channels. Effect sizes were reported.
-5. Independent‑samples comparison between gender groups on SUS total score.
-
-> [!NOTE]
-> Inferential repeated‑measures one‑way ANOVA for three usability tasks was not applicable for main‑study dataset because task‑level timing metrics were not collected in questionnaire survey.
+1. Data‑cleaning: filter invalid responses.
+We split participants into two subgroups: participants who had used MSA AI assistant (n=4) vs participants who never used MSA (n=8).
+Not‑applicable responses from non‑users were preserved and excluded from MSA‑specific scales such as SUS and trust scale.
+2. Scale reliability check: Cronbach’s Alpha was calculated for SUS and trust scale.
+3. Only descriptive statistics were computed: frequencies, percentages, mean, standard deviation, min‑max values.
+> [!IMPORTANT]
+> The comparative Q14 items are categorical single‑choice questions, not paired continuous Likert‑scale ratings. **No paired‑samples t‑test or Wilcoxon signed‑rank test can be performed for these items**.
+> Due to the very small valid subsample of actual MSA users (n=4), **no inferential statistical tests (correlation, t‑test, ANOVA) were conducted**. All quantitative results are purely descriptive.
 
 ### Qualitative data processing
 Open‑ended questionnaire textual responses were anonymised and manually analysed using **thematic analysis**. Responses were open‑coded and aggregated into high‑level themes including perceived strengths, accuracy‑related concerns, user‑interaction barriers and improvement‑suggestions. No NVivo software was used for this small sample.
 
 <a id="findings"></a>
 ## 6. Findings
-### Descriptive sample overview (N=12)
-Gender distribution: Female n=7 (58.3%), Male n=5 (41.7%).
-For Q15 which method is better for major‑selection: 75% (9/12) participants regarded MSA‑AI as better, 8.3% preferred traditional search, 16.7% considered both approximately equal.
+### Descriptive sample overview (Total N=12)
+- Year distribution: Year1 n=8 (66.7%), Year2 n=2 (16.7%), Other n=2 (16.7%)
+- Major‑decision status: Already decided major n=8 (66.7%), Narrowed to 2‑3 options n=3 (25.0%), No idea yet n=1 (8.3%)
+- Heard about MSA: Heard n=5 (41.7%), First‑time hearing n=6 (50.0%), Not sure n=1 (8.3%)
+- Used MSA assistant: Used n=4 (33.3%), Never used n=8 (66.7%)
 
-### Within‑subject subjective comparison (Wilcoxon signed‑rank test)
-Participants rated MSA‑AI assistant and traditional major‑information search on identical dimensions:
-1. **Speed (Q14b)**: MSA‑AI (M=4.00, SD=1.128) was rated significantly higher than traditional search (M=2.58, SD=0.515), Z=-2.404, p=0.016. Participants perceived AI as faster for retrieving major‑selection information.
-2. **Source credibility (Q14e)**: Traditional search (M=4.08, SD=0.289) scored significantly higher than MSA‑AI (M=2.25, SD=0.622), Z=-3.169, p=0.002. Users had strong concerns regarding the provenance and factual source of AI‑generated answers.
-3. **Intention to reuse (Q14f)**: MSA‑AI (M=3.67, SD=1.073) had significantly higher reuse intention than traditional search (M=2.75, SD=0.452), Z=-1.930, p=0.054 (marginal significance).
+#### Q14 comparative categorical results (N=12 total respondents, single‑choice: which works better)
+1. Ease of use: MSA=8, Traditional search=2, Cannot judge=2
+2. Speed / Quickness: MSA=4, Traditional search=4, Cannot judge=4
+3. Accuracy: MSA=6, Traditional search=4, Cannot judge=2
+4. Clarity of answers: MSA=7, Traditional search=3, Cannot judge=2
+5. Information source credibility: MSA=4, Traditional search=5, Cannot judge=3
+6. Intention to reuse: MSA=7, Traditional search=4, Cannot judge=1
 
-No statistically‑significant difference was found for perceived ease of use, factual accuracy and answer clarity between two channels.
+Perceived overall better method for major‑selection (Q15):
+MSA n=7 (58.3%), Traditional search n=4 (33.3%), About the same n=1 (8.3%)
 
-### SUS usability score
-After correction with standard SUS formula, mean SUS total score for participants who used MSA was M=70.63 (SD=20.67). This falls within the "good‑acceptable" SUS usability range.
-Independent‑samples comparison showed no statistically‑significant SUS‑score difference between female and male participants (p=0.288).
+### Scale results (Only for participants who actually used MSA, valid subsample n=4)
+> Scale reliability:
+> - SUS (10 items): Cronbach’s α = **0.906** (excellent internal consistency)
+> - Trust scale (4 items): Cronbach’s α = **0.956** (excellent internal consistency)
+
+Descriptive for scales (n=4):
+- SUS total score: Mean = 45.83, SD =7.71 (range 27.5‑55.0)
+- Trust total score: Mean = 2.39, SD =1.18 (1‑5 scale)
+
+Additional perceptions among MSA‑users:
+- Q20 perceived factual accuracy: Mostly accurate n=2; Partly accurate n=5; Mostly inaccurate n=2; Never checked n=1; Not applicable n=2
+- Q22 perceived AI‑error occurrence: Observed errors more‑than‑once n=4; Observed once n=3; Not sure n=3; Not applicable n=2
 
 ### Qualitative thematic findings
 From open‑text responses, four main themes emerged:
-- ✅ **Strength**: Direct, fast information retrieval; convenient natural‑language interaction.
-- ⚠️ **Accuracy risk**: Worries about outdated major requirements, AI hallucination, lack of cited official sources inside AI replies.
-- 🧩 **Interaction barrier**: Uncertainty on how to frame good prompts for the AI chatbot.
-- 💡 **Improvement suggestion**: Request for example prompt buttons, prominent official‑source references, clear disclaimer about non‑official nature of AI outputs.
+- ✅ **Strength**: Direct information retrieval, natural‑language interaction is convenient for quick look‑up of major facts.
+- ⚠️ **Accuracy risk**: Worries about outdated major‑requirement information and lack of traceable official source references within AI replies.
+- 🧩 **Interaction barrier**: Uncertainty on constructing good prompts to obtain high‑quality answers; VPN‑access barrier limits usage.
+- 💡 **Improvement suggestion**: Add example prompt buttons, prominent non‑official disclaimer, links pointing to XJTLU official major documents.
 
 <a id="discussion-limitations-and-recommendations"></a>
 ## 7. Discussion, limitations and recommendations
 ### Interpretation of results
-Participants subjectively perceived the MSA AI assistant as a fast‑acting tool for major‑selection queries and reported higher willingness to reuse it. However, a critical weakness is low perceived source‑credibility: students do not trust the factual provenance of AI‑generated answers, even though overall SUS usability is acceptable. This aligns with HCI literature stating that for high‑stakes decisions such as major‑selection, factual trust is as important as interface usability.
+From categorical comparative choices, a majority of participants selected MSA‑AI as the better option for ease‑of‑use, answer clarity and reuse intention. Meanwhile more participants judged traditional search to have higher source credibility.
+
+For the small subsample of users who have interacted with MSA, SUS average score sits in the lower‑marginal acceptable range; trust score is moderate. Many participants reported observing factual errors from the AI output.
+This aligns with HCI literature stating that for high‑stakes decisions such as major‑selection, factual trust is equally important as interface usability.
 
 Our original pilot usability‑test observation also echoed this point: the personalised GPA‑based major‑recommendation task had high failure‑rate, showing factual‑recommendation functions are fragile for this system.
 
 ### Limitations
-- Sampling: convenience‑sampling small sample N=12, limited generalisability to full Year‑1 student population.
+- Critical sampling limitation: Out of total N=12, only **4 participants have real hands‑on experience with the MSA AI assistant**. All SUS and trust‑scale results are based on this tiny subsample, interpretation must be treated with great caution. Findings cannot be generalised to the full Year‑1 student population.
 - Main‑study is questionnaire‑based self‑report survey, without controlled objective task‑performance (time / success‑rate) behavioural measurements. Self‑reported attitudes may diverge from real‑world actual usage behaviour.
+- Q14 uses categorical single‑choice comparison instead of separate Likert‑ratings for each tool; we cannot perform statistical comparison of continuous scores between MSA and traditional search.
 - Potential response bias in self‑reported questionnaire ratings.
 
 > [!NOTE]
@@ -166,7 +189,7 @@ Our original pilot usability‑test observation also echoed this point: the pers
 Each recommendation is supported by collected participant feedback:
 1. Add example prompt buttons on chat‑interface, helping users construct better natural‑language queries (from interaction‑barrier theme).
 2. Add prominent disclaimer on chat‑webpage: AI outputs are not official XJTLU advice, for reference‑only (from accuracy‑risk theme).
-3. Where possible, make AI assistant explicitly reference or link to official university major‑document sources to improve perceived source‑credibility (from source‑credibility quantitative result and qualitative feedback).
+3. Where possible, make AI assistant explicitly reference or link to official university major‑document sources to improve perceived source‑credibility (from comparative Q14 source‑credibility results and qualitative feedback).
 4. Further iteration on personalised GPA‑based major‑recommendation logic, since pilot usability‑test found high failure‑rate for this task.
 
 > [!NOTE]
