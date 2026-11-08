@@ -1,255 +1,188 @@
-<div style="max-width: 960px; margin: 40px auto; padding: 0 20px; font-family: Arial, sans-serif; line-height: 1.8; color: #222;">
+# 🎓 XJTLU Major Selection AI Assistant
+**Group‑E**
 
-<div align="center">
-<h1 style="margin-bottom:10px;">🎓 XJTLU Major Selection AI Assistant</h1>
-<p style="color:#555; margin-top:0;">Group-E</p>
-</div>
+> 📄 ADS401 Web Report | GitHub‑Pages single‑page report
 
-<hr style="border:none; border-top:2px solid #4F46E5; margin:30px 0;">
+🔗 [Open our XJTLU Major Selection AI Chatbot (XJTLU VPN / Campus Network Needed)](https://aiagent.xjtlu.edu.cn/product/llm/mall/application/d40ej496i3uelisjb0q0/chat)
 
-<h2 style="color:#4F46E5;">🔍 Project Overview & AI Prototype</h2>
-<p>This is an AI-powered chatbot application hosted on XJTLU internal AI-Agent platform.</p>
-<p>The target users are Year 1 XJTLU students who will complete major selection at the end of Year 1.</p>
-<p>Students can ask natural-language questions about XJTLU major requirements, GPA thresholds, course workload and career prospects.</p>
-<p>The AI assistant provides tailored information to support their major decision-making.</p>
+---
+## 🔗 Navigation
+- [Project at a glance](#project-at-a-glance)
+- [Problem, motivation and research questions](#problem-motivation-and-research-questions)
+- [Background and related work](#background-and-related-work)
+- [System and evaluation design](#system-and-evaluation-design)
+- [Data preparation and analysis](#data-preparation-and-analysis)
+- [Findings](#findings)
+- [Discussion, limitations and recommendations](#discussion-limitations-and-recommendations)
+- [Transparency and references](#transparency-and-references)
 
-<p>💡 <strong>Note:</strong> The AI chatbot link below is an XJTLU internal resource. XJTLU campus network or XJTLU VPN is required to access this agent.</p>
+<a id="project-at-a-glance"></a>
+## 1. Project at a glance
+**Group members**: Group‑E members
 
-<p>🔗 <a href="https://aiagent.xjtlu.edu.cn/product/llm/mall/application/d40ej496i3uelisjb0q0/chat" target="_blank" rel="noopener noreferrer" style="color:#4F46E5; text-decoration:none; font-weight:bold;">Open our XJTLU Major Selection AI Chatbot (XJTLU VPN / Campus Network Needed)</a></p>
+**Project summary**
+This project evaluates the XJTLU internal AI‑Agent major‑selection chatbot for Year‑1 undergraduate students.
+Originally we planned task‑based usability testing with three standardized tasks for objective timing and success metrics. Due to practical constraints including VPN‑access barriers for the internal AI platform, the main formal data collection was adjusted to an online questionnaire‑based mixed‑method survey. We collected quantitative Likert‑scale ratings including SUS usability, trust, and direct subjective comparison between the AI assistant and traditional major‑information‑search channels, alongside open‑ended qualitative feedback. The study aims to understand user perception, strengths, pain‑points and improvement directions for this AI tool.
 
-<hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+Evaluated system: XJTLU Major‑Selection AI Assistant (internal AI‑Agent platform).
 
-<h2 style="color:#4F46E5;">❓ Research Questions</h2>
-<p>1. Can this AI chatbot help Year 1 XJTLU students retrieve accurate and clear information for major selection?</p>
-<p>2. Can users efficiently get answers to their major-related questions by interacting with this AI assistant?</p>
-<p>3. Do Year 1 students trust the AI-generated answers and consider this tool usable for their major choice?</p>
+<a id="problem-motivation-and-research-questions"></a>
+## 2. Problem, motivation and research questions
+### Context & intended users
+Target users: XJTLU Year‑1 students who need to make major‑selection decisions at the end of Year 1.
+Major‑related information is scattered across university official websites, social media and informal advice from senior students. Students spend substantial manual effort gathering and comparing major‑related information.
 
-<hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+### Research Questions
+1. Can this AI chatbot help Year‑1 XJTLU students retrieve accurate and clear information for major selection?
+2. Can users efficiently get answers to their major‑related questions by interacting with this AI assistant?
+3. Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?
 
-<h2 style="color:#4F46E5;">📖 Research Rationale</h2>
-<p>💠 Year 1 XJTLU students face major selection, but information about majors is scattered across official websites, social media and senior students’ experience.</p>
-<p>💠 Students spend much time collecting and comparing major information manually.</p>
-<p>💠 This study uses a comparative perspective: we compare the user experience of getting major information via our AI assistant against the traditional way (searching official websites and forums).</p>
-<p>💠 We aim to explore whether an AI chatbot can lower the information-search burden for students.</p>
+### Scope of claims
+Findings are limited to XJTLU internal AI‑Agent major‑selection assistant, and our sample of participating Year‑1 students. Results cannot be generalised to external large‑language‑models or other‑university student populations.
 
-<hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+<a id="background-and-related-work"></a>
+## 3. Background and related work
+AI chatbots are increasingly deployed within higher‑education contexts to support student information‑seeking. For high‑stakes decisions such as university major selection, usability is not limited to interface experience; perceived trust and concerns about AI hallucination and outdated factual information become critical factors for adoption.
 
-<h2 style="color:#4F46E5;">🧪 Experiment Plan</h2>
+Many existing HCI usability studies adopt task‑based usability testing combining objective behavioural metrics (task completion time, success rate) and subjective standardized questionnaires such as the System Usability Scale (SUS). Questionnaire‑based surveys are also widely used to capture self‑reported attitudes, perceived advantages and barriers from real‑world users.
 
-<h3 style="margin-top:24px;">3.1 Evaluation Methods</h3>
-<p>We combine usability testing, post-test survey, and semi-structured interview.</p>
-<p>✅ Usability testing: Participants complete 3 predefined tasks on our AI agent. We record task performance.</p>
-<p>✅ Post-test survey: Collect quantitative usability and trust scores after tasks.</p>
-<p>✅ Semi-structured interview: Gather qualitative feedback about pain points and suggestions.</p>
+**Research gap**: Few empirical evaluations focus on university‑internal closed AI‑agent systems built for undergraduate major‑selection workflows. Many evaluations measure usability alone, without jointly investigating perceived trust and concerns over factual accuracy.
 
-<h3 style="margin-top:24px;">3.2 Sampling Method</h3>
-<p>Convenience sampling. Recruit 5–8 Year 1 XJTLU students preparing for major selection.</p>
-<p>Inclusion criteria: Current Year 1 students, have not confirmed their final major.</p>
+Rationale for method choice: We adopted a mixed‑methods approach combining quantitative survey scales and open‑ended qualitative feedback, to capture both numerical attitude measurements and rich user suggestions.
 
-<h3 style="margin-top:24px;">3.3 Data to Collect</h3>
+<a id="system-and-evaluation-design"></a>
+## 4. System and evaluation design
+### System description
+The evaluated system is an internal XJTLU AI‑Agent chatbot built to answer major‑selection‑related natural‑language queries. It supports queries on major GPA entry thresholds, prerequisite courses, workload and career‑prospect information. VPN or campus network access is mandatory.
 
-<p><strong>Quantitative Data</strong></p>
-<p>1. Task completion time for each task</p>
-<p>2. Task success rate (whether participants finish tasks correctly)</p>
-<p>3. SUS (System Usability Scale) score</p>
-<p>4. 5-point Likert score for trust in AI responses</p>
+### Original planned usability‑test tasks (Pilot‑test only, N=5)
+> These three standardized controlled tasks were only executed in our small pilot study for study‑material refinement, not in the formal questionnaire‑based main study:
+1. Task1: Ask AI for HCI major GPA requirements and prerequisite courses
+2. Task2: Given GPA=70, request AI to recommend suitable majors
+3. Task3: Request AI to compare workload and career prospects for Computer Science and HCI
 
-<p><strong>Qualitative Data</strong></p>
-<p>1. Spoken comments during usability test</p>
-<p>2. Answers in post-test interview</p>
-<p>3. Records of AI errors, missing or confusing outputs</p>
+> Pilot observation (N=5): Task2 (GPA‑based major recommendation) showed highest failure rate; Task1 (single‑major requirement lookup) had shortest average completion time. Pilot sample was too small for inferential statistics and only used for iterative refinement of questionnaire and procedure.
 
-<h3 style="margin-top:24px;">3.4 Predefined User Tasks</h3>
-<p>Participants will complete these tasks on the XJTLU AI-Agent chatbot:</p>
-<p>1. Task 1: Ask the AI about GPA requirements and prerequisite courses for the HCI major at XJTLU.</p>
-<p>2. Task 2: Your GPA is 70, ask the AI to recommend suitable majors.</p>
-<p>3. Task 3: Ask the AI to compare the workload and career prospects of Computer Science and HCI.</p>
+### Formal main‑study design
+Formal data collection adopted **online questionnaire‑based cross‑sectional survey (non‑experimental)**.
+Within‑subject comparison was implemented via questionnaire items: every respondent provided subjective Likert ratings for **both the MSA AI assistant AND traditional major‑information search channels**.
 
-<hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+### Participants & Sampling
+Sampling method: convenience sampling of XJTLU Year‑1 students.
+Inclusion criteria: Year‑1 students undergoing major‑selection process.
+Formal valid sample N=12.
 
-<h2 style="color:#4F46E5;">📄 Research Materials</h2>
+### Study procedure
+1. Participants read online information sheet and gave digital informed consent via checkbox before accessing questionnaire items.
+2. Screening question confirmed participant meets inclusion criteria.
+3. Questionnaire collected demographics, prior awareness and usage experience of MSA AI assistant.
+4. Within‑subject rating block Q14: participants rated both MSA‑AI and traditional search on ease, speed, accuracy, clarity, source‑credibility, intention‑to‑reuse.
+5. SUS System Usability Scale, trust‑related Likert‑items, multiple‑choice questions on advantages / barriers / improvement needs.
+6. Open‑ended text questions for qualitative feedback.
 
-<h3 style="margin-top:24px;">4.1 Survey Script (Post-test Questionnaire)</h3>
-<p>Fill this after usability testing</p>
+### Measures
+1. Demographic and background items
+2. Within‑subject paired Likert‑ratings for MSA‑AI vs traditional search (5‑point scale, Q14 series)
+3. Standard System Usability Scale (SUS, 10‑item) for participants who had used MSA
+4. Custom trust‑related 5‑point Likert‑scale items
+5. Multiple‑choice items for perceived strengths, barriers and improvement requirements
+6. Open‑ended free‑text questions for qualitative feedback
 
-<p><strong>1. Rate your agreement (1=Strongly Disagree, 5=Strongly Agree)</strong></p>
-<p>I find this AI assistant easy to use.</p>
-<p>I trust answers from this AI assistant.</p>
-<p>The AI quickly understands my questions about XJTLU majors.</p>
-<p>This tool reduces my time searching for major information.</p>
+### Ethics, consent and bias mitigation
+- Digital informed consent (checkbox‑based consent in questionnaire; full information‑sheet and consent‑form document stored in supplementary‑materials zip package).
+- All participant responses fully anonymised; no identifiable personal information published on web‑report or GitHub pages.
+- Participants could withdraw at any time without penalty.
+- AI outputs were explicitly stated as for‑reference‑only and not official university advice.
 
-<p><strong>2. SUS Scale (10 standard items)</strong></p>
-<p>I found the system unnecessarily complex.</p>
-<p>I thought the system was easy to use.</p>
-<p>I thought the system was well integrated.</p>
-<p>I found the system unnecessarily complex.</p>
-<p>I found the system cumbersome to use.</p>
-<p>I felt confident using the system.</p>
-<p>I needed to learn many things before I could use the system.</p>
-<p>I found the system cumbersome to use.</p>
-<p>I felt confident using the system.</p>
-<p>I needed to learn many things before I could use the system.</p>
+### Deviation from original plan
+Originally we planned controlled task‑based usability‑testing with objective task‑timing metrics and repeated‑measures ANOVA for the three predefined tasks.
+Due to practical recruitment constraints including VPN‑access restrictions for the campus‑internal AI‑Agent platform, formal main‑study was changed to questionnaire‑only survey. Task‑level timing and task‑success behavioural metrics were **not collected for main study**, so repeated‑measures ANOVA was not performed for the main dataset. Pilot N=5 data was only used for material iteration.
 
-<p><strong>3. Open question:</strong> What is the biggest advantage of this AI assistant?</p>
-<p><strong>4. Open question:</strong> What is the main problem you found when using this AI assistant?</p>
+<a id="data-preparation-and-analysis"></a>
+## 5. Data preparation and analysis
+Data were exported from survey tool as CSV and imported into IBM SPSS Statistics for quantitative analysis.
 
-<h3 style="margin-top:24px;">4.2 Interview Questions (Semi-structured, ~5 mins)</h3>
-<p>Conducted after questionnaire</p>
-<p>1. What is your overall feeling when using this major-selection AI assistant?</p>
-<p>2. Did the AI give confusing or wrong answers? Please describe.</p>
-<p>3. What questions do you hope the AI can answer but cannot now?</p>
-<p>4. Compared with checking the XJTLU website or asking seniors, will you use this AI tool? Why?</p>
-<p>5. What improvements would you suggest for this chatbot?</p>
+### Quantitative data processing
+1. Data‑cleaning: filter invalid responses. Participants were split into subgroups: participants who had used MSA AI assistant vs participants who never used MSA. Not‑applicable responses from non‑users were preserved and excluded from MSA‑specific scales such as SUS.
+2. SUS scoring: Initial SPSS compute syntax contained arithmetic error. SUS total scores were **recalculated following official standard SUS formula**:
+    - Odd‑numbered items: raw score minus one
+    - Even‑numbered reversed items: five minus raw score
+    - Sum all transformed values and multiply by 2.5 to get final 0‑100 SUS score.
+3. Descriptive statistics: frequencies, percentages, mean, standard deviation, min‑max values for all scale items.
+4. Within‑subject comparison: Shapiro‑Wilk test showed violation of normality assumption for Likert items. Therefore non‑parametric **Wilcoxon signed‑rank test** was prioritised over paired‑samples t‑test for comparing subjective ratings between MSA‑AI and traditional‑search channels. Effect sizes were reported.
+5. Independent‑samples comparison between gender groups on SUS total score.
 
-<h3 style="margin-top:24px;">4.3 Information Sheet</h3>
-<p><strong>Study Title:</strong> Evaluation of an AI Assistant for XJTLU Year1 Major Selection</p>
-<p><strong>Research Group:</strong> HCI Group</p>
+> Inferential repeated‑measures one‑way ANOVA for three usability tasks was not applicable for main‑study dataset because task‑level timing metrics were not collected in questionnaire survey.
 
-<p><strong>Purpose of the study</strong></p>
-<p>We are evaluating an internal XJTLU web-based AI chatbot that helps Year1 students collect major-selection information.</p>
-<p>You need to complete simple tasks, fill a questionnaire and answer interview questions.</p>
+### Qualitative data processing
+Open‑ended questionnaire textual responses were anonymised and manually analysed using **thematic analysis**. Responses were open‑coded and aggregated into high‑level themes including perceived strengths, accuracy‑related concerns, user‑interaction barriers and improvement‑suggestions. No NVivo software was used for this small sample.
 
-<p><strong>What you need to do</strong></p>
-<p>Interact with the AI chatbot to finish 3 tasks, fill a short questionnaire and take a brief interview.</p>
-<p>Total time ~15 minutes.</p>
+<a id="findings"></a>
+## 6. Findings
+### Descriptive sample overview (N=12)
+Gender distribution: Female n=7 (58.3%), Male n=5 (41.7%).
+For Q15 which method is better for major‑selection: 75% (9/12) participants regarded MSA‑AI as better, 8.3% preferred traditional search, 16.7% considered both approximately equal.
 
-<p><strong>Risks & Benefits</strong></p>
-<p>There are no foreseeable risks.</p>
-<p>Your participation helps us improve this AI tool.</p>
-<p>AI answers are for reference only and do not represent official XJTLU information.</p>
+### Within‑subject subjective comparison (Wilcoxon signed‑rank test)
+Participants rated MSA‑AI assistant and traditional major‑information search on identical dimensions:
+1. **Speed (Q14b)**: MSA‑AI (M=4.00, SD=1.128) was rated significantly higher than traditional search (M=2.58, SD=0.515), Z=-2.404, p=0.016. Participants perceived AI as faster for retrieving major‑selection information.
+2. **Source credibility (Q14e)**: Traditional search (M=4.08, SD=0.289) scored significantly higher than MSA‑AI (M=2.25, SD=0.622), Z=-3.169, p=0.002. Users had strong concerns regarding the provenance and factual source of AI‑generated answers.
+3. **Intention to reuse (Q14f)**: MSA‑AI (M=3.67, SD=1.073) had significantly higher reuse intention than traditional search (M=2.75, SD=0.452), Z=-1.930, p=0.054 (marginal significance).
 
-<p><strong>Confidentiality</strong></p>
-<p>All collected data will be anonymized.</p>
-<p>No personal identifiable information will be published, your name will not appear in the report.</p>
+No statistically‑significant difference was found for perceived ease of use, factual accuracy and answer clarity between two channels.
 
-<p><strong>Right to withdraw</strong></p>
-<p>You may stop participating at any time without penalty.</p>
-<p>Before we finish data analysis, you can request us to delete your data.</p>
+### SUS usability score
+After correction with standard SUS formula, mean SUS total score for participants who used MSA was M=70.63 (SD=20.67). This falls within the "good‑acceptable" SUS usability range.
+Independent‑samples comparison showed no statistically‑significant SUS‑score difference between female and male participants (p=0.288).
 
-<p><strong>Contact</strong></p>
-<p>If you have questions about this research, contact our group members.</p>
+### Qualitative thematic findings
+From open‑text responses, four main themes emerged:
+1. ✅ Strength theme: Direct, fast information retrieval; convenient natural‑language interaction.
+2. ⚠️ Accuracy‑risk theme: Worries about outdated major requirements, AI hallucination, lack of cited official sources inside AI replies.
+3. 🧩 Interaction‑barrier theme: Uncertainty on how to frame good prompts for the AI chatbot.
+4. 💡 Improvement theme: Request for example prompt buttons, prominent official‑source references, clear disclaimer about non‑official nature of AI outputs.
 
-<h3 style="margin-top:24px;">4.4 Consent Form</h3>
-<p>I confirm I have read and understood the information sheet for this study.</p>
-<p>I have had the chance to ask questions and my questions have been answered.</p>
-<p>I understand my participation is voluntary and I can withdraw at any time.</p>
-<p>I agree anonymized data collected in this study can be used for this HCI course academic project.</p>
-<p>I agree to take part in this study.</p>
+<a id="discussion-limitations-and-recommendations"></a>
+## 7. Discussion, limitations and recommendations
+### Interpretation of results
+Participants subjectively perceived the MSA AI assistant as a fast‑acting tool for major‑selection queries and reported higher willingness to reuse it. However, a critical weakness is low perceived source‑credibility: students do not trust the factual provenance of AI‑generated answers, even though overall SUS usability is acceptable. This aligns with HCI literature stating that for high‑stakes decisions such as major‑selection, factual trust is as important as interface usability.
 
-<p>Name: ________________________</p>
-<p>Signature: ____________________</p>
-<p>Date: _________________________</p>
+Our original pilot usability‑test observation also echoed this point: the personalised GPA‑based major‑recommendation task had high failure‑rate, showing factual‑recommendation functions are fragile for this system.
 
-<hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+### Limitations
+1. Sampling: convenience‑sampling small sample N=12, limited generalisability to full Year‑1 student population.
+2. Main‑study is questionnaire‑based self‑report survey, without controlled objective task‑performance (time / success‑rate) behavioural measurements. Self‑reported attitudes may diverge from real‑world actual usage behaviour.
+3. Access constraint: MSA AI assistant is campus‑VPN‑locked internal system, external participants cannot take part.
+4. Potential response bias in self‑reported questionnaire ratings.
 
-<h2 style="color:#4F46E5;">📊 Sample Data</h2>
-<p>After usability testing, paste your collected pilot data here.</p>
+> Pilot‑test N=5 only served for material iteration and is not formal evidence for our conclusions.
 
-<h3 style="margin-top:24px;">Quantitative Sample Data (Pilot Test, N=5)</h3>
+### Evidence‑based recommendations
+Each recommendation is supported by collected participant feedback:
+1. Add example prompt buttons on chat‑interface, helping users construct better natural‑language queries (from interaction‑barrier theme).
+2. Add prominent disclaimer on chat‑webpage: AI outputs are not official XJTLU advice, for reference‑only (from accuracy‑risk theme).
+3. Where possible, make AI assistant explicitly reference or link to official university major‑document sources to improve perceived source‑credibility (from source‑credibility quantitative result and qualitative feedback).
+4. Further iteration on personalised GPA‑based major‑recommendation logic, since pilot usability‑test found high failure‑rate for this task.
 
-<table style="border-collapse: collapse; width: 100%; margin-top:12px;">
-  <thead>
-    <tr style="background:#4F46E5; color:#fff;">
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Participant ID</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Task1 Time(s)</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Task1 Success</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Task2 Time(s)</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Task2 Success</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Task3 Time(s)</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Task3 Success</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">SUS Score</th>
-      <th style="border:1px solid #ddd; padding:10px; text-align:left;">Trust Score (1-5)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">P1</td>
-      <td style="border:1px solid #ddd; padding:10px;">42</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">58</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">71</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">76</td>
-      <td style="border:1px solid #ddd; padding:10px;">4</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">P2</td>
-      <td style="border:1px solid #ddd; padding:10px;">65</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">82</td>
-      <td style="border:1px solid #ddd; padding:10px;">❌</td>
-      <td style="border:1px solid #ddd; padding:10px;">90</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">68</td>
-      <td style="border:1px solid #ddd; padding:10px;">3</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">P3</td>
-      <td style="border:1px solid #ddd; padding:10px;">38</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">45</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">62</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">80</td>
-      <td style="border:1px solid #ddd; padding:10px;">4</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">P4</td>
-      <td style="border:1px solid #ddd; padding:10px;">70</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">95</td>
-      <td style="border:1px solid #ddd; padding:10px;">❌</td>
-      <td style="border:1px solid #ddd; padding:10px;">84</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">64</td>
-      <td style="border:1px solid #ddd; padding:10px;">3</td>
-    </tr>
-    <tr>
-      <td style="border:1px solid #ddd; padding:10px;">P5</td>
-      <td style="border:1px solid #ddd; padding:10px;">45</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">60</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">75</td>
-      <td style="border:1px solid #ddd; padding:10px;">✅</td>
-      <td style="border:1px solid #ddd; padding:10px;">72</td>
-      <td style="border:1px solid #ddd; padding:10px;">4</td>
-    </tr>
-  </tbody>
-</table>
+> Distinction: above points are evidence‑based suggestions, not proven causal conclusions from this study.
 
-<h3 style="margin-top:24px;">Qualitative Sample Feedback</h3>
-<p>💬 P1: The AI gives direct answers, saves me time to look up websites.</p>
-<p>💬 P2: Sometimes the AI mixes major requirements from different years.</p>
-<p>💬 P3: Suggest adding example prompts so I know what to ask.</p>
-<p>💬 P4: I am worried the AI may give outdated GPA thresholds.</p>
-<p>💬 P5: The chat interface is simple and easy to operate.</p>
+<a id="transparency-and-references"></a>
+## 8. Transparency and references
+### Group‑member contribution statement
+> Write down each group‑member’s responsibilities here: e.g. participant recruitment, questionnaire design, SPSS analysis, web‑report writing, poster‑design.
 
-<hr style="border:none; border-top:1px solid #ddd; margin:30px 0;">
+### AI‑use statement
+[1] DeepSeek V3.1, available at https://www.deepseek.com. Used for grammatical proofreading and formatting suggestions only, no substantive content generation.
 
-<h2 style="color:#4F46E5;">💡 Reflection on Study Implementation</h2>
+### Data‑and‑material‑availability statement
+Raw participant survey responses, SPSS `.sav` dataset, SPSS output `.spv` file, questionnaire drafts, information‑sheet and consent‑form documents, interview‑related materials are packaged inside `ADS401_GroupE_SupplementaryMaterials.zip` for submission.
+**No raw identifiable participant data is published on this GitHub web‑report or GitHub repository.** Only aggregated summary statistics and anonymised thematic quotes are presented on this webpage.
 
-<h3 style="margin-top:24px;">1. Limitations found during pilot data collection</h3>
-<p>🔸 The AI may occasionally generate incorrect or outdated XJTLU major information, which reduces user trust.</p>
-<p>🔸 Some participants do not know how to phrase their questions well, so they struggle to get ideal replies.</p>
-<p>🔸 Small sample size (only 5 participants), results cannot be generalised to all Year1 students.</p>
-<p>🔸 This AI agent is an internal XJTLU resource; users outside campus without VPN cannot access it.</p>
+### Acknowledgements
+We thank XJTLU AI‑Agent platform for providing access to the major‑selection AI assistant system.
 
-<h3 style="margin-top:24px;">2. Improvement suggestions</h3>
-<p>🔹 Add example prompt buttons on the chat page to guide users to write better questions.</p>
-<p>🔹 Build a fact-check knowledge base to reduce AI hallucinations about XJTLU major rules.</p>
-<p>🔹 Add a clear disclaimer on the webpage to remind users that AI answers are not official information.</p>
+### References
+> Insert IEEE‑format numbered references for HCI / SUS / AI‑trust‑in‑education literature here.
 
-<h3 style="margin-top:24px;">3. Study reflection</h3>
-<p>During usability testing, we learned that user trust is critical for students to accept AI tools for high-stakes decisions like major selection.</p>
-<p>Usability is not only about interface operation, but also the accuracy of the AI content.</p>
-
-<hr style="border:none; border-top:2px solid #4F46E5; margin:40px 0;">
-
-<div align="center" style="color:#888; font-size:14px;">
-<p>✨ Thank you for reading our project documentation ✨</p>
-</div>
-
-</div>
+---
+✨ End of Web Report
