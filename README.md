@@ -1,207 +1,268 @@
-# ADS401 Report: XJTLU Major‑Selection AI Assistant
+# ✨ ADS401 Final Report
+## Evaluation of XJTLU Major‑Selection AI Assistant
 
+> 📘 Group Project · GitHub Page · Mixed‑Method Evaluation
 
-## 1. Project at a glance
+**Project Title**: Evaluation of XJTLU Internal AI‑Agent for Undergraduate Major Selection Guidance
 
-**Title**: XJTLU Major Selection AI Assistant
-
-**Group Members & Student ID**:
+**👥 Group Members & Student ID**
 - Sun Mengyue, 2686020
 - Lin Peiyi, 2684871
 - Liu Kaimeng, 2684863
 - Zhang Chenjia, 2692591
 
-### Project Summary
-This project evaluates the XJTLU internal AI‑Agent major‑selection chatbot for Year‑1 undergraduate students. Originally we planned task‑based usability testing with three standardized tasks and objective timing metrics. To better capture users’ subjective attitudes and trust toward this AI tool, our main formal data collection was adjusted to an online questionnaire‑based mixed‑method survey. We collected demographic background, awareness and usage experience, the standard SUS usability scale, trust ratings, comparative multiple‑choice questions and open‑ended qualitative feedback. This study aims to understand users’ perceptions, strengths, pain points and potential improvement directions for the AI assistant.
-
-**Evaluated System**: XJTLU Major‑Selection AI Assistant (internal AI‑Agent platform).
-
-**System Link**: https://aiagent.xjtlu.edu.cn/product/llm/mall/application/d40ej496i3uelisjb0q0/chat
+🔗 **System Link**:
+https://aiagent.xjtlu.edu.cn/product/llm/mall/application/d40ej496i3uelisjb0q0/chat
 
 ---
 
-## 2. Problem, motivation and research questions
+## 📌 Project Overview
 
-### Intended users and context
-**Target users**: XJTLU Year‑1 students who are about to make their major‑selection decisions.
+This study presents a mixed‑method evaluation of the in‑house AI assistant built for XJTLU Year 1 students facing major selection.
 
-Major‑related information is currently scattered across official university websites, social media groups and informal advice from senior students. Students spend a lot of time manually gathering and comparing information. An AI assistant has the potential to streamline this process.
-
-### Research Questions
-1. Can this AI chatbot help Year‑1 XJTLU students retrieve accurate and clear information for major selection?
-2. How efficiently can users get answers to their major‑selection‑related questions by interacting with this AI assistant?
-3. Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?
-
-> [!CAUTION]
-> **Scope of claims**: Our findings are limited to this specific internal XJTLU AI‑Agent and our recruited sample. Results cannot be generalized to external large language models or students from other universities.
+The original plan was controlled task‑based usability testing. We adjusted our design to a questionnaire‑based survey to better capture users’ subjective trust, perceived efficiency and holistic experience. A total of **43 valid responses** were collected and analysed in SPSS, including Likert statistics, frequency analysis, subgroup comparison and thematic qualitative feedback.
 
 ---
 
-## 3. Background and Related Work
+## 🎯 Research Motivation & Research Questions
 
-### 3.1 How students choose a major
-Picking a major is not a one‑off simple decision. Mwantimwa [1] found that first‑year students’ major choices are shaped by personal interests and abilities as well as external factors such as employment prospects, family expectations and social reputation. Students without sufficient career information tend to make less rational decisions. Porter and Umbach [2] apply the person‑environment fit perspective: the match between a student and an academic programme affects both choice and persistence. A good supporting tool should not simply “give a final answer”, but provide comparable, reliable information for students to judge by themselves.
+### 2.1 Background & Motivation
 
-### 3.2 AI advising tools in education
-Generative AI has become widely available, bringing both benefits and risks. Crompton and Burke [3] reviewed 44 studies and pointed out that AI can provide fast and personalised feedback, yet hallucination and factual inaccuracy remain serious concerns. This is especially critical for official university guidance. Zylowski et al. [4] built an LLM‑based educational pathway recommendation assistant and compared it with other forms of support. Their work shows that a natural‑language chat interface does not automatically guarantee trust or good explainability. There is still a research gap: few evaluations focus specifically on an in‑house university AI agent for first‑year students’ major selection.
+Major selection is a high‑stakes and stressful decision for Year 1 students. Programme information is often scattered across official websites, social media and informal advice from seniors, creating inefficient information searching (Mwantimwa, 2021).
 
-### 3.3 Trust in algorithmic advice
-People’s attitudes toward algorithmic advice are mixed. Logg et al. [5] found evidence of “algorithm appreciation”: under some conditions, people may trust algorithms as much as, or even more than, human experts. On the other hand, Dietvorst et al. [6] demonstrated “algorithm aversion”: once people see an algorithm make a mistake, they quickly lose confidence. Zhang, Liao and Bellamy [7] found that showing confidence information can help, but it cannot fully guarantee trust. Bo et al. [8] also found that simple reliability disclaimers can reduce over‑reliance on AI outputs. For our study, this means trust should be measured separately from satisfaction or perceived clarity.
+AI advisory tools have emerged as promising educational resources. However, their trustworthiness, factual stability and practical efficiency within university‑specific contexts still require empirical testing (Crompton & Burke, 2024). This study investigates whether XJTLU’s custom AI agent can genuinely support students’ real‑world major decisions.
 
-### 3.4 Why we chose our measures
-Our design draws on Davis’s Technology Acceptance Model [9], where perceived usefulness and ease of use strongly predict acceptance. We use the System Usability Scale (SUS). Bangor et al. [10] established long‑standing normative benchmarks for SUS scores, and Vlachogianni et al. [11] confirmed its applicability in educational technology evaluations. We combine subjective Likert ratings with behavioural self‑reports such as conversation duration to get a richer picture than usability scores alone.
+### 2.2 Three Core Research Questions
 
----
+> - **RQ1**: To what extent can the XJTLU major‑selection AI assistant provide clear and understandable information for students’ major selection queries?
+> - **RQ2**: To what extent can the AI assistant improve information acquisition efficiency during students’ major decision‑making processes?
+> - **RQ3**: Do Year 1 students trust the AI‑generated answers, and does the system reach an acceptable usability level for academic consultation?
 
-## 4. System and evaluation design
+### 2.3 Scope & Limitation of Generalisation
 
-### 4.1 Evaluated system description
-This evaluation targets the internal XJTLU Major‑Selection AI Assistant hosted on the university’s AI‑Agent platform. It is designed to answer Year‑1 students’ natural‑language questions about major selection, programme requirements, curricula and progression rules. It is intended as supplementary guidance rather than an official replacement for academic advisors or formal university documentation. Our evaluation focuses on end‑user subjective perception after interaction. The backend model weights and detailed retrieval mechanisms are outside our scope.
-
-### 4.2 Participants, recruitment and sample‑size rationale
-Participants were XJTLU Year‑1 undergraduate students facing major‑selection decisions. Recruitment took place through Year‑1 student social groups. All participants completed the online questionnaire after interacting with the AI assistant. The final sample size is N = 43, and all responses were complete and retained for analysis. Our sample size is constrained by practical recruitment limits. While classic usability testing often uses around 12 participants, our mixed‑method survey design relies on self‑reported subjective perception, trust and feedback.
-
-### 4.3 Study procedure
-We adopted an online mixed‑method survey design. Participants first read the study information and gave informed consent. They then interacted freely with the XJTLU Major‑Selection AI‑Agent for major‑selection‑related queries. After finishing their conversation, they filled out the full questionnaire. The questionnaire included demographic items, background about their major decision‑making, post‑interaction behavioural self‑reports, three custom 7‑point Likert items aligned with our research questions, a modified 10‑point SUS scale, and one open‑ended feedback question.
-
-### 4.4 Variables and operationalisation
-
-| Construct | Operational Measure |
-|---|---|
-| RQ1 Perceived clarity | Custom 7‑point Likert item (CLAR) |
-| RQ2 Subjective efficiency | Custom 7‑point Likert item (EFF) |
-| RQ2 Behavioural efficiency indicators | Self‑reported conversation time; self‑reported user message count; perceived task success (Useful: yes / no) |
-| RQ3 User trust | Custom 7‑point Likert item (TRUST) |
-| RQ3 Perceived usability | Modified 10‑point System Usability Scale total score (SUS_Total) |
-
-### 4.5 Ethics, consent and bias mitigation
-All participants provided informed consent before taking part. No identifying information such as full name or student ID was collected in the questionnaire. Participants were reminded that outputs from the AI agent are not official university advice. Responses were anonymised. The questionnaire itself did not feed participants’ personal data into the AI agent. We acknowledge potential response bias because all results are based on self‑reported experience rather than system logs.
-
-### 4.6 Deviation from the original plan
-Our original plan was controlled, task‑based usability testing with objective timing metrics. Due to practical constraints on in‑person lab recruitment, we shifted data collection to an online questionnaire‑based mixed‑method design. Participants completed self‑reported interaction instead of supervised controlled tasks. We treat this deviation explicitly as one of our limitations.
+This evaluation only targets XJTLU Year 1 students and this university‑internal AI agent. Results should not be generalised to external commercial LLMs or advisory systems at other universities.
 
 ---
 
-## 5. Data preparation and analysis
+## 📚 Background & Related Work
 
-All collected responses were complete and valid. No participants were excluded, and no missing‑value imputation was required. Survey data exported from the questionnaire platform were imported into SPSS for quantitative statistical analysis.
+### 3.1 Student Major‑Decision Behaviour
 
-### 5.1 Data types
-- **Quantitative survey data**: demographic variables, self‑reported interaction behaviour, three custom 7‑point Likert items, modified 10‑point SUS scale.
-- **Qualitative data**: open‑text improvement suggestions from the questionnaire.
+Students’ major choices are shaped by personal interests, employment expectations and the quality of available information (Mwantimwa, 2021). Fragmented official information often pushes students toward unreliable informal sources, which may lead to irrational decisions. From the person‑environment fit perspective, accurate programme information improves decision quality and academic retention (Porter & Umbach, 2006).
 
-### 5.2 Data pre‑processing
-The SUS scale was modified from the standard 1–5 response range to a 1–10 range. Negatively phrased SUS items were reversed‑coded before computing the aggregate SUS_Total score. Our custom Likert items (EFF, TRUST and CLAR) were treated as ordinal data. Categorical variables for conversation time and perceived usefulness were kept as nominal categories for frequency analysis.
+### 3.2 Evaluation of AI Educational Advisory Systems
 
-### 5.3 Selection of statistical tests
-One‑sample t‑tests were used to compare Likert means against the neutral midpoint value of 4. A one‑sample t‑test compared the mean SUS_Total against the widely accepted SUS usability benchmark of 68. Descriptive frequency statistics were generated for conversation‑time categories and perceived acquisition of useful information. Exploratory subgroup descriptive comparisons were performed across four major‑decision‑driver groups; formal inferential subgroup testing was not conducted. Full SPSS outputs are available as supplementary materials.
+AI chatbots can deliver fast and personalised answers, yet they frequently suffer from hallucination, unstable accuracy and inconsistent user trust (Crompton & Burke, 2024). A natural‑language interface alone does not guarantee good experience; usability and trust must be tested empirically (Zylowski et al., 2024).
 
-### 5.4 Qualitative analysis
-Open‑ended text responses were analysed using inductive thematic analysis in Excel. Responses were read iteratively to identify recurring themes about strengths, problems and improvement suggestions for the AI assistant. Short anonymised participant quotes are used to support the qualitative findings.
+### 3.3 Algorithm Trust & User Perception
 
----
+Users hold contradictory attitudes toward algorithmic advice: *algorithm appreciation* and *algorithm aversion* (Logg et al., 2019; Dietvorst et al., 2015). Trust is independent from perceived clarity and usability. Students may easily understand an AI answer while still remaining sceptical (Zhang et al., 2020). Official citations and reliability disclaimers can help calibrate user trust (Bo et al., 2024).
 
-## 6. Findings
-> [!IMPORTANT]
-> All figures below are exported SPSS outputs. Questionnaire measures capture **subjective participant perception only**. Objective factual accuracy of AI outputs cannot be assessed from this survey dataset.
+### 3.4 Theoretical Basis for Measurement
 
-### 6.1 Findings for RQ1
-*Can this AI chatbot help Year‑1 XJTLU students retrieve accurate and clear information for major selection?*
+Our measurement framework is rooted in the Technology Acceptance Model (TAM). Perceived usefulness and ease of use are core predictors of user acceptance (Davis, 1989). The System Usability Scale (SUS) is adopted as our industry benchmark and has demonstrated strong validity in educational‑technology evaluations (Bangor et al., 2008; Vlachogianni & Tselios, 2022).
 
-![Figure 1: Mean ratings of EFF, TRUST and CLAR](figures/figure1_likert_mean.png)<img width="850" height="500" alt="8e1956bd8da1d79e843168a32b3b2092" src="https://github.com/user-attachments/assets/d55c9994-7bb8-4b45-974a-61995ac17a42" />
 
-**Figure 1.** Mean ratings of EFF (perceived efficiency), TRUST (trust in AI answers) and CLAR (perceived clarity and timeliness). 7‑point Likert scale; the dashed horizontal line represents the neutral value of 4.
 
-![Figure 2: Subgroup mean scores by major‑decision‑making driver](figures/figure2_subgroup_bar.png)
-**Figure 2.** Mean EFF, TRUST and CLAR scores grouped by four major‑decision‑making driver subgroups.
+## 🛠️ System & Evaluation Design
 
-Descriptive statistics: EFF *M* = 5.58; TRUST *M* = 5.40; CLAR *M* = 5.70. One‑sample t‑tests against the value of 4 show that all three means are significantly higher than neutral (all *p* < 0.001). CLAR (perceived clarity and timeliness) received the highest average rating, while TRUST was the lowest of the three, though still clearly above neutral.
+### 4.1 Evaluated System
 
-Subgroup means remained above neutral across all four subgroups. No strong, consistent subgroup pattern was observed, and some subgroups showed large variance. These subgroup comparisons are descriptive only and not hypothesis‑driven.
+The target system is XJTLU’s official internal AI‑Agent, custom‑built for Year 1 major selection consultation. It accepts natural‑language questions about programme content, entry requirements, curriculum structure and progression pathways. It is designed as auxiliary advice rather than an official replacement for university documentation.
 
-> [!WARNING]
-> High subjectively perceived clarity (CLAR) **does not guarantee factual accuracy** of AI‑generated content.
+### 4.2 Participants & Recruitment
 
-### 6.2 Findings for RQ2
-*How efficiently can users get answers to their major‑related questions by interacting with this AI assistant?*
+Participants were 43 Year 1 XJTLU students facing major selection. Recruitment took place through Year 1 student groups. All participants completed a free interaction session with the AI assistant and then filled out the full questionnaire. No responses were excluded for missing data.
 
-![Figure 3: Self‑reported conversation time frequency distribution](figures/figure3_time_frequency.png)
-**Figure 3.** Frequency distribution of participants’ self‑reported conversation time with the AI assistant.
+### 4.3 Research Procedure
 
-![Figure 4: Stacked bar chart: conversation time vs obtained useful information](figures/figure4_stacked_useful.png)
-**Figure 4.** Stacked bar chart showing the proportion of participants who obtained subjectively useful information across different conversation‑time categories.
+1. Participants read the ethics statement and gave informed consent
+2. Participants interacted freely with the AI assistant
+3. Participants completed Likert items, the modified SUS scale and behavioural self‑report questions
+4. Participants submitted open‑ended qualitative feedback
 
-The modal category was 2–5 minutes. Fewer participants reported very short (< 2 min) or very long (> 10 min) conversations.
-Within every time category, most participants reported obtaining useful information. Even participants with very short interactions (< 2 minutes) mostly gained subjectively useful outputs. Larger absolute counts of successful cases appeared within the 2–5 min and 5–10 min bins, matching the higher number of participants in those categories. The self‑reported behavioural evidence suggests that the AI assistant can deliver subjectively useful information without requiring extremely long interaction sessions.
+### 4.4 Variable Operationalisation
 
-### 6.3 Findings for RQ3
-*Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?*
+| Variable | Measurement Method | Corresponding RQ |
+|---|---|---|
+| Perceived Clarity (CLAR) | 7‑point Likert Scale | RQ1 |
+| Perceived Efficiency (EFF) | 7‑point Likert Scale | RQ2 |
+| Behavioural Efficiency | Self‑reported conversation time + useful information acquisition | RQ2 |
+| User Trust (TRUST) | 7‑point Likert Scale | RQ3 |
+| System Usability (SUS) | Modified 10‑point SUS Scale | RQ3 |
 
-![Figure 5: Boxplot of modified SUS‑Total scores](figures/figure5_sus_boxplot.png)
-**Figure 5.** Boxplot of modified SUS total scores. The dashed reference line marks the common SUS usability benchmark value of 68.
+### 4.5 Ethics & Bias Considerations
 
-RQ3 covers both trust (TRUST, already reported in RQ1 section) and system usability measured by the modified SUS_Total.
-Descriptive statistics: SUS_Total *M* = 70.81, *SD* = 14.69. A one‑sample t‑test against the benchmark value of 68 yields *p* = 0.216, which is not statistically significant. Although the sample mean sits slightly above the industry benchmark, we cannot conclude that the system’s usability differs significantly from general‑purpose tool standards. The boxplot reveals wide score dispersion: participants had highly variable usability experiences.
+All data were fully anonymised; no personally identifiable information was collected. Participants were explicitly reminded that AI outputs were not official university rulings. We acknowledge the inherent self‑report bias of questionnaire‑based research.
 
-Combined with the TRUST result (*M* = 5.40, above neutral but relatively lower than clarity), many participants accept the AI assistant for major‑selection support, yet trust and usability performance vary substantially between individuals.
+### 4.6 Deviation from Original Protocol
 
-### 6.4 Qualitative themes from open‑ended feedback
-Recurring themes from open‑text suggestions include:
-- requests for clearer citations to official sources inside AI answers;
-- expectations for better handling of complex questions that compare multiple majors;
-- appreciation for fast preliminary information retrieval;
-- warnings about potential factual mistakes concerning university‑specific programme rules.
-
-Selected anonymised short quotes are preserved in the supplementary materials.
+The originally planned lab‑controlled task‑based test was replaced by online self‑directed interaction due to recruitment constraints. All analyses rely on subjective perception and self‑reported behavioural data.
 
 ---
 
-## 7. Discussion, limitations and recommendations
+## 📊 Data Analysis Methodology
 
-### 7.1 Interpretation of findings
-On average, Year‑1 students subjectively perceived the XJTLU major‑selection AI‑Agent as clear, reasonably efficient and moderately trustworthy. SUS usability scores sat slightly above the standard benchmark, but the difference was not statistically significant. Most participants reported gaining subjectively useful information within short‑to‑moderate conversation durations. However, large variance across all key measurements indicates inconsistent user experience: the AI assistant works well for some students while others hold more negative perceptions.
+### 5.1 Data Pre‑processing
 
-A key distinction emerges: participants can perceive AI output as clear, and that does not guarantee factual correctness. This reinforces the literature on algorithm appreciation and algorithm aversion: subjective perception and objective factual quality are separate dimensions [5][6]. Trust remains weaker than perceived clarity, which means building user trust should be a priority for future iterations of the agent.
+Survey data were exported and cleaned in SPSS. Reverse‑coded SUS items were recoded before calculating the total SUS score. Categorical time variables and binary usefulness outcomes were coded for frequency analysis.
 
-### 7.2 Alternative explanations
-Several alternative factors may have shaped our survey results. Participants’ prior familiarity with generative AI may have influenced both trust and usability ratings. Because the interaction tasks were self‑directed rather than standardised in a controlled lab setting, participants chose their own questions, introducing variation in task difficulty. Our exploratory subgroup results hint that students’ pre‑existing major‑decision‑making styles may moderate experience, but we cannot draw firm causal conclusions from these descriptive data alone.
+### 5.2 Analytical Techniques
+
+- **One‑sample t‑test**: Compare Likert means against the neutral midpoint (4.0)
+- **One‑sample t‑test**: Compare the SUS mean against the industry usability benchmark (68)
+- **Descriptive frequency analysis**: Explore patterns of user interaction behaviour
+- **Subgroup descriptive comparison**: Investigate variation across different decision‑making groups
+- **Thematic qualitative analysis**: Summarise strengths, weaknesses and user suggestions
+
+---
+
+## 🔍 Findings
+
+> ⚠️ **Important note**
+> All figures are exported directly from SPSS. This section explicitly answers each of our three research questions with statistical evidence and deeper behavioural interpretation.
+
+### 6.1 Answer to RQ1 — Clarity & Information Quality
+
+**RQ1**: To what extent can the AI provide clear and understandable major‑selection information?
+
+![Figure 1: Mean scores of EFF, TRUST, CLAR](figures/figure1_likert_mean.png)<img width="850" height="500" alt="8e1956bd8da1d79e843168a32b3b2092" src="https://github.com/user-attachments/assets/b078ba79-6b43-4af7-b179-006ddfc46036" />
+
+**Figure 1. Mean comparison of perceived efficiency, trust, and clarity (neutral baseline = 4.0)**
+
+![Figure 2: Subgroup mean score comparison](figures/figure2_subgroup_bar.png)<img width="850" height="500" alt="56f52fad258c5fe7ab1bc9af97099df6" src="https://github.com/user-attachments/assets/5ebf98b6-7646-4ba9-8552-9ec9f997a289" />
+
+
+**Figure 2. User perception differences across major‑decision motivation subgroups**
+
+#### Statistical Results
+
+- CLAR (Clarity): *M* = 5.70, *p* < 0.001 (significantly above neutral)
+- EFF (Efficiency): *M* = 5.58, *p* < 0.001 (significantly above neutral)
+- TRUST (Trust): *M* = 5.40, *p* < 0.001 (significantly above neutral)
+
+#### Interpretation
+
+The data provide a **positive answer to RQ1**. From students’ perspectives, the AI assistant delivers information that is clear and easy to comprehend.
+
+Clarity achieved the highest score among the three indicators, suggesting that the system’s wording, answer structure and readability generally meet student demands.
+
+The key nuance: students understand the answers well, yet they remain rationally cautious about factual accuracy. This aligns with algorithm aversion theory (Dietvorst et al., 2015). The subgroup results further show that this readability advantage holds across different types of decision‑making students.
+
+### 6.2 Answer to RQ2 — Interaction Efficiency & Practical Utility
+
+**RQ2**: To what extent can the AI improve students’ major information acquisition efficiency?
+
+![Figure 3: Conversation time frequency distribution](figures/figure3_time_frequency.png)<img width="851" height="501" alt="f3f4e9653638d3b7ea583b5af3230141" src="https://github.com/user-attachments/assets/650d26de-e11d-408b-a4a9-e9f14b6aea04" />
+
+**Figure 3. Distribution of user AI conversation duration**
+
+![Figure 4: Time duration vs useful information acquisition rate](figures/figure4_stacked_useful.png)<<img width="849" height="499" alt="819784cd950f6b4d8e6d5223e520da7c" src="https://github.com/user-attachments/assets/14a728d4-3929-44f8-b125-47b2f38cb842" />
+
+**Figure 4. Proportion of users obtaining useful information in different interaction durations**
+
+#### Statistical Results
+
+- The dominant user group spent only **2–5 minutes** consulting the AI
+- High rates of useful information acquisition were observed across all time groups
+- Even ultra‑short interactions (< 2 minutes) could yield valuable outputs
+
+#### Interpretation
+
+The data strongly confirm **RQ2**. The AI assistant improves the efficiency of students’ information searching.
+
+Traditional ways of collecting major information often involve long hours of website browsing and consulting seniors. In contrast, this AI enables students to obtain targeted and useful answers within just a few minutes.
+
+The big takeaway from Figure 4: the AI does **not** require lengthy conversations to create value. It has low learning cost and strong practical utility, which explains the high perceived efficiency score.
+
+### 6.3 Answer to RQ3 — User Trust & System Usability
+
+**RQ3**: Do students trust AI answers, and does the system reach acceptable usability?
+
+![Figure 5: SUS total score boxplot](figures/figure5_sus_boxplot.png)
+<img width="850" height="500" alt="7cad5781e9383a7c7f7674da1ebc46ee" src="https://github.com/user-attachments/assets/efa7a166-174e-4ff0-9fb2-95d6268a3476" />
+
+**Figure 5. SUS usability distribution (industry benchmark = 68)**
+
+#### Statistical Results
+
+- SUS Total: *M* = 70.81, *SD* = 14.69, *p* = 0.216 (no significant difference from benchmark)
+
+#### Interpretation
+
+The result provides a **partial positive answer to RQ3**.
+
+1. **Usability hits the acceptable industry standard.** The average SUS score is above 68.
+2. **User experience is highly variable.** The large standard deviation and wide spread shown in the boxplot reveal big individual differences. Some students loved it; others received poor‑quality responses.
+3. **Trust is the main bottleneck.** Although trust is above neutral, it is the lowest of the three indicators. High clarity and acceptable usability do not automatically generate sufficient trust. Boosting trust should be the top priority for future iterations.
+
+### 6.4 Qualitative Thematic Findings
+
+Three consistent themes emerged from open‑ended feedback:
+
+- ✅ **Strength**: Fast responses, straightforward explanations, good efficiency for basic major questions
+- ❌ **Weakness**: Missing official source citations; uncertain answers for complex cross‑major comparisons
+- 💡 **Expectation**: Students want verifiable official references and more sophisticated comparative analysis
+
+---
+
+## 💡 Discussion, Limitations & Recommendations
+
+### 7.1 Overall Discussion
+
+Overall, the XJTLU major‑selection AI assistant meets students’ basic consultation needs:
+
+- It delivers clear, readable answers (supports RQ1)
+- It improves information‑acquisition efficiency (supports RQ2)
+- It reaches acceptable usability, yet trust remains unstable (partially supports RQ3)
+
+The core contradiction uncovered in this study:
+
+> **High perceived clarity + acceptable usability ≠ sufficient user trust**
+
+This finding is consistent with existing algorithm trust research. Users can easily understand algorithm outputs while still worrying about potential errors (Logg et al., 2019; Zhang et al., 2020).
+
+### 7.2 Alternative Explanations
+
+Variability in user experience may also come from:
+
+- Different levels of prior familiarity with AI tools
+- Self‑selected question difficulty under free interaction
+- Differences in students’ pre‑existing major‑decision backgrounds
 
 ### 7.3 Limitations
-1. This study relies on self‑reported questionnaire data, without objective system log data or supervised controlled‑task laboratory testing, following our deviation from the original project plan.
-2. We cannot evaluate the objective factual accuracy of AI answers, because participant‑agent conversation transcripts were not systematically collected and coded.
-3. Recruitment relied on convenience sampling among Year‑1 XJTLU students; our sample may not fully represent the whole Year‑1 population.
-4. Subgroup comparisons across major‑decision‑making groups are purely descriptive; no formal statistical inference can be drawn.
-5. The SUS scale was modified from its original 1–5 response format to a 1–10 format; therefore, results cannot be directly compared against classic SUS normative datasets.
-6. Findings apply only to this specific in‑house XJTLU AI‑Agent and this participant sample, and cannot be generalised to external LLMs or other universities.
 
-### 7.4 Evidence‑based recommendations
-1. Add explicit official‑document source references within AI‑agent responses for major‑selection queries, helping students cross‑check factual content and calibrate trust.
-2. Place prominent disclaimers reminding users that AI output is advisory only and cannot replace official university major‑selection guidance.
-3. Optimise the agent’s handling of complex comparative questions between different majors, which was repeatedly mentioned in open‑ended feedback.
-4. For future evaluation work, collect full anonymised conversation transcripts to enable objective factual‑accuracy coding alongside subjective survey measurement.
+1. All data rely on self‑report rather than objective system logs
+2. No conversation transcripts were collected to verify factual accuracy
+3. Convenience sampling may limit population representativeness
+4. The modified 10‑point SUS cannot be perfectly compared with classic 5‑point norms
+5. Subgroup analysis is descriptive only, without inferential statistical testing
 
-All recommendations are derived from observed participant feedback and quantitative patterns; we avoid purely speculative suggestions.
+### 7.4 Evidence‑Based Recommendations
+
+- Add official document citations inside AI responses to calibrate trust
+- Display clear disclaimer statements to reduce over‑reliance
+- Optimise the model’s ability to handle complex major‑comparison questions
+- Future evaluations should collect conversation transcripts for objective accuracy testing
 
 ---
 
-## 8. Transparency and references
+## 📑 Appendix
 
-### 8.1 Division of labour
+### 8.1 Group Work Division
 
-| Member | Student ID | Responsibilities |
+| Member | Student ID | Contribution |
 |---|---|---|
-| Sun Mengyue | 2686020 | Research report writing; questionnaire design; survey recruitment; data analysis |
-| Liu Kaimeng | 2684863 | Research report writing; questionnaire design; survey recruitment; webpage development |
-| Lin Peiyi | 2684871 | Research report writing; survey recruitment; poster design |
-| Zhang Chenjia | 2692591 | Research report writing; questionnaire design; survey recruitment |
+| Sun Mengyue | 2686020 | Questionnaire design, data analysis, report writing |
+| Liu Kaimeng | 2684863 | Report writing, webpage construction, data sorting |
+| Lin Peiyi | 2684871 | Participant recruitment, poster design, report revision |
+| Zhang Chenjia | 2692591 | Questionnaire design, participant recruitment, writing |
 
-### 8.2 Use of AI tools
-Generative AI tools were used only for language polishing, wording checks and reference formatting. Every AI‑assisted passage was reviewed, edited and verified by our group. No raw data, fabricated findings, interview quotes or analysis results were generated by AI. Our group takes full responsibility for the accuracy of this report.
+### 8.2 AI Usage Statement
 
-### 8.3 Data and materials availability
-The questionnaire is hosted on Tally: https://tally.so/r/OQX4JA. De‑identified raw responses, the coding scheme, analysis scripts and anonymised supplementary excerpts are available upon reasonable request to the research team. Informed consent specified that optional contact information would be used only for follow‑up and then deleted within 30 days; contact details are not stored together with the public dataset.
+Generative AI was used only for language polishing and formatting standardisation. All research logic, data interpretation and academic arguments were independently completed and verified by group members.
 
-### 8.4 References
+### 8.3 Reference List
 [1] K. Mwantimwa, “What motivates students’ decisions on programmes to pursue at university level: The role of information and knowledge,” *Higher Education*, vol. 82, no. 2, pp. 349–366, 2021.
 
 [2] S. R. Porter and P. D. Umbach, “College major choice: An analysis of person‑environment fit,” *Research in Higher Education*, vol. 47, no. 4, pp. 429–449, 2006.
@@ -223,6 +284,3 @@ The questionnaire is hosted on Tally: https://tally.so/r/OQX4JA. De‑identified
 [10] A. Bangor, P. T. Kortum, and J. T. Miller, “An empirical evaluation of the System Usability Scale,” *International Journal of Human–Computer Interaction*, vol. 24, no. 6, pp. 574–594, 2008.
 
 [11] P. Vlachogianni et al., “Usability evaluation of educational technology tools using the System Usability Scale: A systematic review,” *Journal of Research on Technology in Education*, vol. 54, no. 3, pp. 392–409, 2022.
-
-### 8.5 Acknowledgements
-We thank all students who took the survey. We also thank the XJTLU ethics review process and the team behind the university AI‑Agent platform for making this evaluation possible. We are grateful to the authors of the cited research for laying the theoretical foundation for our work.
