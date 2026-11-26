@@ -259,28 +259,28 @@ Variability in user experience may also come from:
 
 ### 8.2 AI Usage Statement
 
-[1] DeepSeek V3.1, Website: [https://www.deepseek.com](shturl.cc/PkrUS5hv6yMsABvvxnHerTdNoLFHsbI4KHZH3Hf1vXwfhdiCAVvTheFdzPtXQ98QwgKvqX2VvDMv7JXt. For manuscript grammar proofreading.
-[2] DouBao, Website: [https://www.doubao.com/chat/](shturl.cc/umdjvxxkevMCLoxDSvZXHjqixf2R7Eb3B2U4jbGrfqUK9x0hfOFUXZK2FjyMOxq49XaPC0mNsFN7Xygrd8AeQYlr. For text polishing.
+[1] DeepSeek V3.1, Website: [https://www.deepseek.com]. For manuscript grammar proofreading.
+[2] DouBao, Website: [https://www.doubao.com/chat/]. For text polishing.
 
 ### 8.3 Reference List
-[1] K. Mwantimwa, “What motivates students’ decisions on programmes to pursue at university level: The role of information and knowledge,” *Higher Education*, vol. 82, no. 2, pp. 349–366, 2021.
+K. Mwantimwa, “What motivates students’ decisions on programmes to pursue at university level: The role of information and knowledge,” *Higher Education*, vol. 82, no. 2, pp. 349–366, 2021.
 
-[2] S. R. Porter and P. D. Umbach, “College major choice: An analysis of person‑environment fit,” *Research in Higher Education*, vol. 47, no. 4, pp. 429–449, 2006.
+S. R. Porter and P. D. Umbach, “College major choice: An analysis of person‑environment fit,” *Research in Higher Education*, vol. 47, no. 4, pp. 429–449, 2006.
 
-[3] H. Crompton and K. Burke, “The educational affordances and challenges of generative artificial intelligence: A systematic review,” *TechTrends*, vol. 68, no. 2, pp. 183–202, 2024.
+H. Crompton and K. Burke, “The educational affordances and challenges of generative artificial intelligence: A systematic review,” *TechTrends*, vol. 68, no. 2, pp. 183–202, 2024.
 
-[4] T. Zylowski et al., “Designing an LLM‑based educational pathway recommendation assistant,” in *Proceedings of the 2024 Learning Analytics and Knowledge Conference*, pp. 456–467, 2024.
+T. Zylowski et al., “Designing an LLM‑based educational pathway recommendation assistant,” in *Proceedings of the 2024 Learning Analytics and Knowledge Conference*, pp. 456–467, 2024.
 
-[5] J. M. Logg, J. A. Minson, and D. A. Moore, “Algorithm appreciation: People prefer judging by algorithm,” *Organizational Behavior and Human Decision Processes*, vol. 151, pp. 90–103, 2019.
+J. M. Logg, J. A. Minson, and D. A. Moore, “Algorithm appreciation: People prefer judging by algorithm,” *Organizational Behavior and Human Decision Processes*, vol. 151, pp. 90–103, 2019.
 
-[6] B. J. Dietvorst, J. P. Simmons, and C. Massey, “Algorithm aversion: People erroneously avoid algorithms after seeing them err,” *Journal of Experimental Psychology: General*, vol. 144, no. 1, pp. 114–126, 2015.
+B. J. Dietvorst, J. P. Simmons, and C. Massey, “Algorithm aversion: People erroneously avoid algorithms after seeing them err,” *Journal of Experimental Psychology: General*, vol. 144, no. 1, pp. 114–126, 2015.
 
-[7] Y. Zhang, Q. Liao, and R. Bellamy, “Effect of confidence and explanation on trust in decision‑making algorithms,” in *Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems*, pp. 1–12, 2020.
+Y. Zhang, Q. Liao, and R. Bellamy, “Effect of confidence and explanation on trust in decision‑making algorithms,” in *Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems*, pp. 1–12, 2020.
 
-[8] J. Y. Bo et al., “Warning against over‑reliance on AI advice: The role of reliability disclaimers,” in *Proceedings of the AAAI Conference on Human Computation and Crowdsourcing*, vol. 12, pp. 23–32, 2024.
+J. Y. Bo et al., “Warning against over‑reliance on AI advice: The role of reliability disclaimers,” in *Proceedings of the AAAI Conference on Human Computation and Crowdsourcing*, vol. 12, pp. 23–32, 2024.
 
-[9] F. D. Davis, “Perceived usefulness, perceived ease of use, and user acceptance of information technology,” *MIS Quarterly*, vol. 13, no. 3, pp. 319–340, Sep. 1989.
+F. D. Davis, “Perceived usefulness, perceived ease of use, and user acceptance of information technology,” *MIS Quarterly*, vol. 13, no. 3, pp. 319–340, Sep. 1989.
 
-[10] A. Bangor, P. T. Kortum, and J. T. Miller, “An empirical evaluation of the System Usability Scale,” *International Journal of Human–Computer Interaction*, vol. 24, no. 6, pp. 574–594, 2008.
+A. Bangor, P. T. Kortum, and J. T. Miller, “An empirical evaluation of the System Usability Scale,” *International Journal of Human–Computer Interaction*, vol. 24, no. 6, pp. 574–594, 2008.
 
-[11] P. Vlachogianni et al., “Usability evaluation of educational technology tools using the System Usability Scale: A systematic review,” *Journal of Research on Technology in Education*, vol. 54, no. 3, pp. 392–409, 2022.
+P. Vlachogianni et al., “Usability evaluation of educational technology tools using the System Usability Scale: A systematic review,” *Journal of Research on Technology in Education*, vol. 54, no. 3, pp. 392–409, 2022.
