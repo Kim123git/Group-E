@@ -1,5 +1,8 @@
 # ADS401 Report: XJTLU Major‑Selection AI Assistant
 
+> [!NOTE]
+> **Reading time ≈10 minutes** | Group project for ADS401 Evaluation Methods and Statistics
+
 ## 1. Project at a glance
 
 **Title**: XJTLU Major Selection AI Assistant
@@ -17,12 +20,6 @@ This project evaluates the XJTLU internal AI‑Agent major‑selection chatbot f
 
 **System Link**: https://aiagent.xjtlu.edu.cn/product/llm/mall/application/d40ej496i3uelisjb0q0/chat
 
-![Figure 1: Mean ratings of EFF, TRUST and CLAR](figures/figure1_likert_mean.png)
-**Figure 1.** Mean ratings of EFF (perceived efficiency), TRUST (trust in AI answers) and CLAR (perceived clarity and timeliness). 7‑point Likert scale; the dashed horizontal line represents the neutral value of 4.
-
-![Figure 2: Subgroup mean scores](figures/figure2_subgroup_bar.png)
-**Figure 2.** Mean EFF, TRUST and CLAR scores grouped by four major‑decision‑making driver subgroups.
-
 ---
 
 ## 2. Problem, motivation and research questions
@@ -37,14 +34,8 @@ Major‑related information is currently scattered across official university we
 2. How efficiently can users get answers to their major‑selection‑related questions by interacting with this AI assistant?
 3. Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?
 
-### Scope of claims
-Our findings are limited to this specific internal XJTLU AI‑Agent and our recruited sample. Results cannot be generalized to external large language models or students from other universities.
-
-![Figure 3: Self‑reported conversation time frequency](figures/figure3_time_frequency.png)
-**Figure 3.** Frequency distribution of participants’ self‑reported conversation time with the AI assistant.
-
-![Figure 4: Stacked bar of time vs useful information](figures/figure4_stacked_useful.png)
-**Figure 4.** Stacked bar chart showing the proportion of participants who obtained subjectively useful information across different conversation‑time categories.
+> [!CAUTION]
+> **Scope of claims**: Our findings are limited to this specific internal XJTLU AI‑Agent and our recruited sample. Results cannot be generalized to external large language models or students from other universities.
 
 ---
 
@@ -61,9 +52,6 @@ People’s attitudes toward algorithmic advice are mixed. Logg et al. [5] found 
 
 ### 3.4 Why we chose our measures
 Our design draws on Davis’s Technology Acceptance Model [9], where perceived usefulness and ease of use strongly predict acceptance. We use the System Usability Scale (SUS). Bangor et al. [10] established long‑standing normative benchmarks for SUS scores, and Vlachogianni et al. [11] confirmed its applicability in educational technology evaluations. We combine subjective Likert ratings with behavioural self‑reports such as conversation duration to get a richer picture than usability scores alone.
-
-![Figure 5: SUS total score boxplot](figures/figure5_sus_boxplot.png)
-**Figure 5.** Boxplot of modified SUS total scores. The dashed reference line marks the common SUS usability benchmark value of 68.
 
 ---
 
@@ -116,29 +104,45 @@ Open‑ended text responses were analysed using inductive thematic analysis in E
 ---
 
 ## 6. Findings
-
-This section presents quantitative results organised by our three research questions. An important caveat: our questionnaire measures participants’ subjective perceptions only; we cannot directly assess the objective factual accuracy of the AI outputs from this dataset.
+> [!IMPORTANT]
+> All figures below are exported SPSS outputs. Questionnaire measures capture **subjective participant perception only**. Objective factual accuracy of AI outputs cannot be assessed from this survey dataset.
 
 ### 6.1 Findings for RQ1
-Can this AI chatbot help Year‑1 XJTLU students retrieve accurate and clear information for major selection?
+*Can this AI chatbot help Year‑1 XJTLU students retrieve accurate and clear information for major selection?*
 
-Figure 1 visualises the mean scores of EFF, TRUST and CLAR against the neutral midpoint of the 7‑point scale (4). Descriptive statistics: EFF *M* = 5.58; TRUST *M* = 5.40; CLAR *M* = 5.70. One‑sample t‑tests against the value of 4 show that all three means are significantly higher than neutral (all *p* < 0.001). CLAR (perceived clarity and timeliness) received the highest average rating, while TRUST was the lowest of the three, though still clearly above neutral.
+![Figure 1: Mean ratings of EFF, TRUST and CLAR](figures/figure1_likert_mean.png)
+**Figure 1.** Mean ratings of EFF (perceived efficiency), TRUST (trust in AI answers) and CLAR (perceived clarity and timeliness). 7‑point Likert scale; the dashed horizontal line represents the neutral value of 4.
 
-Figure 2 shows exploratory subgroup means split by participants’ major‑decision‑making drivers. Mean ratings remained above neutral across all four subgroups. No strong, consistent subgroup pattern was observed, and some subgroups showed large variance. These subgroup comparisons are descriptive only and not hypothesis‑driven.
+![Figure 2: Subgroup mean scores by major‑decision‑making driver](figures/figure2_subgroup_bar.png)
+**Figure 2.** Mean EFF, TRUST and CLAR scores grouped by four major‑decision‑making driver subgroups.
 
-> **Caveat**: High subjectively perceived clarity (CLAR) does **not** guarantee factual accuracy of AI‑generated content.
+Descriptive statistics: EFF *M* = 5.58; TRUST *M* = 5.40; CLAR *M* = 5.70. One‑sample t‑tests against the value of 4 show that all three means are significantly higher than neutral (all *p* < 0.001). CLAR (perceived clarity and timeliness) received the highest average rating, while TRUST was the lowest of the three, though still clearly above neutral.
+
+Subgroup means remained above neutral across all four subgroups. No strong, consistent subgroup pattern was observed, and some subgroups showed large variance. These subgroup comparisons are descriptive only and not hypothesis‑driven.
+
+> [!WARNING]
+> High subjectively perceived clarity (CLAR) **does not guarantee factual accuracy** of AI‑generated content.
 
 ### 6.2 Findings for RQ2
-How efficiently can users get answers to their major‑related questions by interacting with this AI assistant?
+*How efficiently can users get answers to their major‑related questions by interacting with this AI assistant?*
 
-Figure 3 presents the frequency distribution of self‑reported conversation time. The modal category was 2–5 minutes. Fewer participants reported very short (< 2 min) or very long (> 10 min) conversations.
+![Figure 3: Self‑reported conversation time frequency distribution](figures/figure3_time_frequency.png)
+**Figure 3.** Frequency distribution of participants’ self‑reported conversation time with the AI assistant.
 
-Figure 4 is the stacked bar chart of conversation time against whether participants obtained useful information. Within every time category, most participants reported obtaining useful information. Even participants with very short interactions (< 2 minutes) mostly gained subjectively useful outputs. Larger absolute counts of successful cases appeared within the 2–5 min and 5–10 min bins, matching the higher number of participants in those categories. The self‑reported behavioural evidence suggests that the AI assistant can deliver subjectively useful information without requiring extremely long interaction sessions.
+![Figure 4: Stacked bar chart: conversation time vs obtained useful information](figures/figure4_stacked_useful.png)
+**Figure 4.** Stacked bar chart showing the proportion of participants who obtained subjectively useful information across different conversation‑time categories.
+
+The modal category was 2–5 minutes. Fewer participants reported very short (< 2 min) or very long (> 10 min) conversations.
+Within every time category, most participants reported obtaining useful information. Even participants with very short interactions (< 2 minutes) mostly gained subjectively useful outputs. Larger absolute counts of successful cases appeared within the 2–5 min and 5–10 min bins, matching the higher number of participants in those categories. The self‑reported behavioural evidence suggests that the AI assistant can deliver subjectively useful information without requiring extremely long interaction sessions.
 
 ### 6.3 Findings for RQ3
-Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?
+*Do Year‑1 students trust the AI‑generated answers and consider this tool usable for their major choice?*
 
-RQ3 covers both trust (TRUST, already reported in the RQ1 section) and system usability measured by the modified SUS_Total. Figure 5 shows the boxplot of SUS_Total scores with the benchmark reference line at 68. Descriptive statistics: SUS_Total *M* = 70.81, *SD* = 14.69. A one‑sample t‑test against the benchmark value of 68 yields *p* = 0.216, which is not statistically significant. Although the sample mean sits slightly above the industry benchmark, we cannot conclude that the system’s usability differs significantly from general‑purpose tool standards. The boxplot reveals wide score dispersion: participants had highly variable usability experiences.
+![Figure 5: Boxplot of modified SUS‑Total scores](figures/figure5_sus_boxplot.png)
+**Figure 5.** Boxplot of modified SUS total scores. The dashed reference line marks the common SUS usability benchmark value of 68.
+
+RQ3 covers both trust (TRUST, already reported in RQ1 section) and system usability measured by the modified SUS_Total.
+Descriptive statistics: SUS_Total *M* = 70.81, *SD* = 14.69. A one‑sample t‑test against the benchmark value of 68 yields *p* = 0.216, which is not statistically significant. Although the sample mean sits slightly above the industry benchmark, we cannot conclude that the system’s usability differs significantly from general‑purpose tool standards. The boxplot reveals wide score dispersion: participants had highly variable usability experiences.
 
 Combined with the TRUST result (*M* = 5.40, above neutral but relatively lower than clarity), many participants accept the AI assistant for major‑selection support, yet trust and usability performance vary substantially between individuals.
 
