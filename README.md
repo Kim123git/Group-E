@@ -126,11 +126,11 @@ Survey data were exported and cleaned in SPSS. Reverse‑coded SUS items were re
 
 **RQ1**: To what extent can the AI provide clear and understandable major‑selection information?
 
-![Figure 1: Mean scores of EFF, TRUST, CLAR]<img width="850" height="500" alt="8e1956bd8da1d79e843168a32b3b2092" src="https://github.com/user-attachments/assets/b078ba79-6b43-4af7-b179-006ddfc46036" />
+<img width="850" height="500" alt="8e1956bd8da1d79e843168a32b3b2092" src="https://github.com/user-attachments/assets/b078ba79-6b43-4af7-b179-006ddfc46036" />
 
 **Figure 1. Mean comparison of perceived efficiency, trust, and clarity (neutral baseline = 4.0)**
 
-![Figure 2: Subgroup mean score comparison]<img width="850" height="500" alt="56f52fad258c5fe7ab1bc9af97099df6" src="https://github.com/user-attachments/assets/5ebf98b6-7646-4ba9-8552-9ec9f997a289" />
+<img width="850" height="500" alt="56f52fad258c5fe7ab1bc9af97099df6" src="https://github.com/user-attachments/assets/5ebf98b6-7646-4ba9-8552-9ec9f997a289" />
 
 
 **Figure 2. User perception differences across major‑decision motivation subgroups**
@@ -153,11 +153,11 @@ The key nuance: students understand the answers well, yet they remain rationally
 
 **RQ2**: To what extent can the AI improve students’ major information acquisition efficiency?
 
-![Figure 3: Conversation time frequency distribution]<img width="851" height="501" alt="f3f4e9653638d3b7ea583b5af3230141" src="https://github.com/user-attachments/assets/650d26de-e11d-408b-a4a9-e9f14b6aea04" />
+<img width="851" height="501" alt="f3f4e9653638d3b7ea583b5af3230141" src="https://github.com/user-attachments/assets/650d26de-e11d-408b-a4a9-e9f14b6aea04" />
 
 **Figure 3. Distribution of user AI conversation duration**
 
-![Figure 4: Time duration vs useful information acquisition rate]<<img width="849" height="499" alt="819784cd950f6b4d8e6d5223e520da7c" src="https://github.com/user-attachments/assets/14a728d4-3929-44f8-b125-47b2f38cb842" />
+<<img width="849" height="499" alt="819784cd950f6b4d8e6d5223e520da7c" src="https://github.com/user-attachments/assets/14a728d4-3929-44f8-b125-47b2f38cb842" />
 
 **Figure 4. Proportion of users obtaining useful information in different interaction durations**
 
@@ -179,7 +179,6 @@ The big takeaway from Figure 4: the AI does **not** require lengthy conversation
 
 **RQ3**: Do students trust AI answers, and does the system reach acceptable usability?
 
-![Figure 5: SUS total score boxplot] 
 <img width="850" height="500" alt="7cad5781e9383a7c7f7674da1ebc46ee" src="https://github.com/user-attachments/assets/efa7a166-174e-4ff0-9fb2-95d6268a3476" />
 
 **Figure 5. SUS usability distribution (industry benchmark = 68)**
@@ -260,7 +259,8 @@ Variability in user experience may also come from:
 
 ### 8.2 AI Usage Statement
 
-[1] DeepSeek V3.1，网址：[https://www.deepseek.com](https://link.wtturl.cn/?target=https%3A%2F%2Fwww.deepseek.com&scene=im&aid=582478&lang=zh)。用于文稿语法校对。
+[1] DeepSeek V3.1, Website: [https://www.deepseek.com](shturl.cc/PkrUS5hv6yMsABvvxnHerTdNoLFHsbI4KHZH3Hf1vXwfhdiCAVvTheFdzPtXQ98QwgKvqX2VvDMv7JXt. For manuscript grammar proofreading.
+[2] DouBao, Website: [https://www.doubao.com/chat/](shturl.cc/umdjvxxkevMCLoxDSvZXHjqixf2R7Eb3B2U4jbGrfqUK9x0hfOFUXZK2FjyMOxq49XaPC0mNsFN7Xygrd8AeQYlr. For text polishing.
 
 ### 8.3 Reference List
 [1] K. Mwantimwa, “What motivates students’ decisions on programmes to pursue at university level: The role of information and knowledge,” *Higher Education*, vol. 82, no. 2, pp. 349–366, 2021.
