@@ -1,7 +1,5 @@
 # ADS401 Report: XJTLU Major‑Selection AI Assistant
 
-> [!NOTE]
-> **Reading time ≈10 minutes** | Group project for ADS401 Evaluation Methods and Statistics
 
 ## 1. Project at a glance
 
@@ -110,7 +108,8 @@ Open‑ended text responses were analysed using inductive thematic analysis in E
 ### 6.1 Findings for RQ1
 *Can this AI chatbot help Year‑1 XJTLU students retrieve accurate and clear information for major selection?*
 
-![Figure 1: Mean ratings of EFF, TRUST and CLAR](figures/figure1_likert_mean.png)
+![Figure 1: Mean ratings of EFF, TRUST and CLAR](figures/figure1_likert_mean.png)<img width="850" height="500" alt="8e1956bd8da1d79e843168a32b3b2092" src="https://github.com/user-attachments/assets/d55c9994-7bb8-4b45-974a-61995ac17a42" />
+
 **Figure 1.** Mean ratings of EFF (perceived efficiency), TRUST (trust in AI answers) and CLAR (perceived clarity and timeliness). 7‑point Likert scale; the dashed horizontal line represents the neutral value of 4.
 
 ![Figure 2: Subgroup mean scores by major‑decision‑making driver](figures/figure2_subgroup_bar.png)
