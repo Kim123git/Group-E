@@ -198,8 +198,6 @@ The result provides a **partial positive answer to RQ3**.
 
 ### 6.4 Qualitative Thematic Findings
 
-Three consistent themes emerged from open‑ended feedback:
-
 Respondents suggested that the AI should consider prior dialogue context to generate comprehensive, accurate responses. The system interface may remain simple. Replies should be bilingual, include analysis rather than raw data only, and provide Chinese content.
 
 ---
