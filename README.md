@@ -127,7 +127,8 @@ Survey data were exported and cleaned in SPSS. Reverse‑coded SUS items were re
 
 **RQ1**: To what extent can the AI provide clear and understandable major‑selection information?
 
-<img width="850" height="500" alt="8e1956bd8da1d79e843168a32b3b2092" src="https://github.com/user-attachments/assets/b078ba79-6b43-4af7-b179-006ddfc46036" />
+<img width="848" height="498" alt="26ff63dfe2a1000444b2a5306e79aace" src="https://github.com/user-attachments/assets/108fdd0f-e356-4187-a84d-c617bc052f39" />
+
 
 **Figure 1. Mean comparison of perceived efficiency, trust, and clarity (neutral baseline = 4.0)**
 
