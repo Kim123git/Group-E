@@ -159,7 +159,8 @@ The key nuance: students understand the answers well, yet they remain rationally
 
 **Figure 3. Distribution of user AI conversation duration**
 
-<<img width="849" height="499" alt="819784cd950f6b4d8e6d5223e520da7c" src="https://github.com/user-attachments/assets/14a728d4-3929-44f8-b125-47b2f38cb842" />
+<img width="850" height="500" alt="0abe61968679657e16d1ca62ec178d45" src="https://github.com/user-attachments/assets/1d37cbf9-d1dd-42f8-884a-1c5aedb94e37" />
+
 
 **Figure 4. Proportion of users obtaining useful information in different interaction durations**
 
