@@ -132,7 +132,8 @@ Survey data were exported and cleaned in SPSS. Reverse‑coded SUS items were re
 
 **Figure 1. Mean comparison of perceived efficiency, trust, and clarity (neutral baseline = 4.0)**
 
-<img width="850" height="500" alt="56f52fad258c5fe7ab1bc9af97099df6" src="https://github.com/user-attachments/assets/5ebf98b6-7646-4ba9-8552-9ec9f997a289" />
+<img width="1024" height="602" alt="674e07edff8b6950166df0fd44014a1d" src="https://github.com/user-attachments/assets/0dfa43e5-c348-4a1f-8377-f00db5f02093" />
+
 
 
 **Figure 2. User perception differences across major‑decision motivation subgroups**
