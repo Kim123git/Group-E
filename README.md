@@ -200,9 +200,7 @@ The result provides a **partial positive answer to RQ3**.
 
 Three consistent themes emerged from open‑ended feedback:
 
-- ✅ **Strength**: Fast responses, straightforward explanations, good efficiency for basic major questions
-- ❌ **Weakness**: Missing official source citations; uncertain answers for complex cross‑major comparisons
-- 💡 **Expectation**: Students want verifiable official references and more sophisticated comparative analysis
+Respondents suggested that the AI should consider prior dialogue context to generate comprehensive, accurate responses. The system interface may remain simple. Replies should be bilingual, include analysis rather than raw data only, and provide Chinese content.
 
 ---
 
