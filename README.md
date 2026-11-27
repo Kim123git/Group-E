@@ -113,7 +113,6 @@ Survey data were exported and cleaned in SPSS. Reverse‑coded SUS items were re
 
 - **One‑sample t‑test**: Compare Likert means against the neutral midpoint (4.0)
 - **One‑sample t‑test**: Compare the SUS mean against the industry usability benchmark (68)
-- **Descriptive frequency analysis**: Explore patterns of user interaction behaviour
 - **Subgroup descriptive comparison**: Investigate variation across different decision‑making groups
 - **Thematic qualitative analysis**: Summarise strengths, weaknesses and user suggestions
 
