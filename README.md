@@ -257,6 +257,7 @@ Variability in user experience may also come from:
 ### 8.2 AI Usage Statement
 
 [1] DeepSeek V3.1, Website: [https://www.deepseek.com]. For manuscript grammar proofreading.
+
 [2] DouBao, Website: [https://www.doubao.com/chat/]. For text polishing.
 
 ### 8.3 Reference List
