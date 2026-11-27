@@ -155,7 +155,8 @@ The key nuance: students understand the answers well, yet they remain rationally
 
 **RQ2**: To what extent can the AI improve students’ major information acquisition efficiency?
 
-<img width="851" height="501" alt="f3f4e9653638d3b7ea583b5af3230141" src="https://github.com/user-attachments/assets/650d26de-e11d-408b-a4a9-e9f14b6aea04" />
+<img width="849" height="499" alt="f55e814aabddeef5857b089b2ff5fd2e" src="https://github.com/user-attachments/assets/ef8e797d-5d3f-44d7-8dfa-1bce67a2a92a" />
+
 
 **Figure 3. Distribution of user AI conversation duration**
 
